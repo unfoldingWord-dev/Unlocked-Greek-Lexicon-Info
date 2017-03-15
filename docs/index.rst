@@ -14,6 +14,4 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   assignments
-   markdown
-   lemma
+   structure
