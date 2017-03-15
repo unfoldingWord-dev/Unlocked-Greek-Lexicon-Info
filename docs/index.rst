@@ -15,5 +15,5 @@ Contents:
    :maxdepth: 2
 
    assignments
-   lemma
    markdown
+   lemma
