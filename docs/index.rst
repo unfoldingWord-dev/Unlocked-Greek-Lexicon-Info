@@ -17,3 +17,4 @@ Contents:
    assignments
    markdown
    lemma
+   abbreviations
