@@ -1,16 +1,16 @@
 Markdown
 --------
 1. All field markers (1 or more #-signs or an asterisk) and their associated data are required for each entity file, unless noted as Optional.
-2. Consecutive lines are merged together for View mode. A blank line is required before AND after each field marker line. Enter a blank line between any 2 lines that you enter, if you want them to appear on separate lines.
-3. Any line that starts with an Exclamation mark is considered a comment and IS visible in View mode.
-4. Any data that appears within “<!—“ and “-->” is considered a comment and IS NOT visible in View mode. This has been used for the two “tag” lines discussed below.
+2. Consecutive lines are merged together for View mode. A blank line is required before AND after each field marker line. Enter a blank line between any two lines that you enter, if you want them to appear on separate lines.
+3. Any line that starts with an exclamation mark is considered a comment and **IS** visible in View mode.
+4. Any data that appears within “<!—“ and “-->” is considered a comment and **IS NOT** visible in View mode. This has been used for the two “tag” lines discussed below.
 5. The two lines shown below are “tag” lines, which must not be removed. For the 1st of these the valid Stage 2 Status values are “NeedsEdits”, “NeedsReview”, “NeedsFinalCheck”, and “ReadyforPub”. Each file was created with “NeedsEdits”. When your edits are complete, you should change the Status to “NeedsReview”. You should also list the lexica that you used for your edits on the 2nd “tag” line. (A list of values to enter for each lexicon source will be provided separately)
 <!-- Status: S2=NeedsEdits -->
 <!-- Lexica used for edits:  {list of lexica} -->
 
 .. note:: There is no blank line between these, since these are non-displayed lines. There should be a blank line before and after this pair.
 
-6. References to other Greek lemmas should be entered in the format: [{Greek word}](../{Strong’s Plus ID}/01.md), e.g. [ἀγαπάω](../G00250/01.md). This is a little cumbersome to enter each time, but we are awaiting some Door43 tooling which will allow us to abbreviate the format. When the Door43 tooling is developed, we will write a script which will replace all of the long format with the abbreviated format, and notify you of this new format for future edits. There were many instances where the A-S lexicon and its processing did not provide a Strong’s ID for a word. This is indicated in the files with no characters between the parenthesis. Please update these, from your other sources.
+6. References to other Greek lemmas should be entered in the format: [{Greek word}](../{Strong’s Plus ID}/01.md), e.g. [ἀγαπάω](../G00250/01.md). This is a little cumbersome to enter each time, but we are awaiting some Door43 tooling which will allow us to abbreviate the format. When the Door43 tooling is developed, we will write a script which will replace all of the long format with the abbreviated format, and notify you of this new format for future edits. There were many instances where the Abbott-Smith lexicon and its processing did not provide a Strong’s ID for a word. This is indicated in the files with no characters between the parenthesis. Please update these, from your other sources.
 
 7. References to Hebrew lemmas should be entered in the form: [{Hebrew word}](//en-uhl/{Strong’s ID}), e.g. [טָהֳרָה](//en-uhl/H2893). Since that lexicon does not currently exist, following a Hebrew link will currently result in a 404 error, Page Not Found. Note that the Hebrew uses the standard 4-digit Strong’s ID.
 8. Citation references should be in the format: [{Standard form}]({USFM Form}), with each reference separated by a semicolon where:
