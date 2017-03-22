@@ -30,4 +30,8 @@ Liddell, Henry George, and Robert Scott. A Greek-English Lexicon: With a Revised
 
 Moulton, J. H., and G. Milligan. Vocabulary of the Greek Testament. London: Hodder and Stoughton, 1930
 
+**A-S**
+
+Abbott-Smith, G. A Manual Greek Lexicon of the New Testament. New York: Charles Scribner’s Sons, 1922.
+
 .. note:: The first two (BDAG and LN) **must**  be referenced for every entry. The next two (FFM and BN) are strongly encouraged.
