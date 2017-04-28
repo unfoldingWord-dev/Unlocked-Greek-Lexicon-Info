@@ -14,7 +14,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   goals
    assignments
    markdown
+   gogs
    lemma
    abbreviations
