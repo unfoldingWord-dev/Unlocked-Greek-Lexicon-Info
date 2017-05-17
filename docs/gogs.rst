@@ -12,16 +12,7 @@ Before you begin working on creating or modifying files in one of the the Unlock
 
 .. note:: Once you have forked the repository, you will need to work from the files on your fork only. Once you have committed changes to a file on your fork and are ready to merge those those changes to the Master repo, you will need to create a Pull Request.
 
-
-Assigning yourself to issues
-----------------------------
-
-We will be tracking progress for the Unlocked Grammar projects using Issues on the repo.
-
-1. On the master repository site, click on **Issues** to see open issues. 
-2. Click on an unassigned issue that is marked for the current sprint. 
-3. Click on **Assignee** to the right of the issue description and select your username. 
-4. Click on **Labels** to add the blue "In Progress" label to that issue once you begin work on it.
+.. _pullrequest:
 
 Creating a Pull Request
 -----------------------
@@ -47,4 +38,4 @@ Pull requests will show up near the top of the main repository page.
 Closing Issues
 --------------
 
-After your Pull Request for an issue has been reviewed and merged into the master repository, you can mark your issue closed and remove the  "In Progress" label from the issue.
+After all of your Pull Requests for an **Issue** (Greek letter) have been reviewed and merged into the master repository, you can mark your **Issue** *closed* and remove the  *In Progress* label from the issue.
