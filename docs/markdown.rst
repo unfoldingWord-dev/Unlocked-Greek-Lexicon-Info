@@ -18,5 +18,5 @@ Markdown
 8. Citation references should be in the format: [{Standard form}]({USFM Form}), with each reference separated by a semicolon where:
 
  - Standard form: {Book name} {chapter}:{verse}, or an abbreviated form for references in the same book or same chapter
- - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See the USFM Formal Markers page for the list of USFM Book names.
+ - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See  `Abbreviations <http://unlocked-greek-lexicon-team-info.readthedocs.io/en/latest/abbreviations.html>`_. for the list of USFM Book names.
  - Example: [I Co 7:11](1Co 7:11); [8:3](1Co 8:3); [7](1Co 8:7)
