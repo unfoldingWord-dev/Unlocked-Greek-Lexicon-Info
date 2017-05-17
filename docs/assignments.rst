@@ -39,7 +39,7 @@ Once you have been assigned a letter for editing, you should begin your task usi
 
 .. note:: These TOC files do not include the lemmas for each letter which were *Inserted* by Alan Bunning, nor do they include the *Undefined* lemmas for each letter that were assigned at the project’s file creation time. See the discussion below. 
 
-Once you have completed editing for all lemmas in the *Word Sort* TOC file for a letter, you will need to move to the associated *Inserted* and *Undefined* TOC files to complete all of the work for each letter. When you have finished the edits for each lemma file (see :doc:`/Markdown`), you will need to create a Pull Request (see :ref:`pullrequest`).
+Once you have completed editing for all lemmas in the *Word Sort* TOC file for a letter, you will need to move to the associated *Inserted* and *Undefined* TOC files to complete all of the work for each letter. When you have finished the edits for each lemma file (see :doc:`Markdown`), you will need to create a Pull Request (see :ref:`pullrequest`).
 
 Each letter’s TOC files list all of its lemmas across and then down, showing both the Greek word and the Strong’s Plus ID. 
 
