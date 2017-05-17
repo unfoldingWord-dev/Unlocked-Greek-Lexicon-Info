@@ -3,8 +3,8 @@ Markdown
 1. All field markers (1 or more #-signs or an asterisk) and their associated data are required for each entity file, unless noted as Optional.
 2. Consecutive lines are merged together for View mode. A blank line is required before AND after each field marker line. Enter a blank line between any two lines that you enter, if you want them to appear on separate lines.
 3. Any line that starts with an exclamation mark is considered a comment and **IS** visible in View mode.
-4. Any data that appears within “<!—“ and “-->” is considered a comment and **IS NOT** visible in View mode. This has been used for the two “tag” lines discussed below.
-5. The two lines shown below are “tag” lines, which must not be removed. For the 1st of these the valid Stage 2 Status values are “NeedsEdits”, “NeedsReview”, “NeedsFinalCheck”, and “ReadyforPub”. Each file was created with “NeedsEdits”. When your edits are complete, you should change the Status to “NeedsReview”. You should also list the lexica that you used for your edits on the 2nd “tag” line. (A list of values to enter for each lexicon source will be provided separately)
+4. Any data that appears within “<!—“ and “-->” is also considered a comment, but **IS NOT** visible in View mode. This has been used for the two “tag” lines discussed below.
+5. The two lines shown below are “tag” lines, which must not be removed. For the 1st of these the valid Stage 2 Status values are “NeedsEdits”, “NeedsReview”, “NeedsFinalCheck”, and “ReadyforPub”. Each file was created with “NeedsEdits”. When your edits are complete, you should change the Status to “NeedsReview”. You must also list the lexica that you used for your edits on the 2nd “tag” line. (A list of values to enter for each lexicon source is provided in  `Abbreviations <http://unlocked-greek-lexicon-team-info.readthedocs.io/en/latest/abbreviations.html>`_.) It is essential that both of these tag lines be updated accordingly. The first of these will be used for tracking the Project’s Status at the most refined level. The second of these is needed for the review process of each lemma file. There will be some policing of these tag lines once a Pull Request is created. There will also be a check after each Pull Request that all of the field markers are present and in their prescribed order. An email will be sent to the editor for any variance of that ordering, and any omission of updates to the 2 tag lines.
 
 <!-- Status: S2=NeedsEdits -->
 
@@ -18,5 +18,5 @@ Markdown
 8. Citation references should be in the format: [{Standard form}]({USFM Form}), with each reference separated by a semicolon where:
 
  - Standard form: {Book name} {chapter}:{verse}, or an abbreviated form for references in the same book or same chapter
- - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See the USFM Formal Markers page for the list of USFM Book names.
+ - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See  `Abbreviations <http://unlocked-greek-lexicon-team-info.readthedocs.io/en/latest/abbreviations.html>`_. for the list of USFM Book names.
  - Example: [I Co 7:11](1Co 7:11); [8:3](1Co 8:3); [7](1Co 8:7)

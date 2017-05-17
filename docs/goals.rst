@@ -22,8 +22,8 @@ In keeping with that goal, we need to make the following changes to A-S:
 
 Here is an example of an entry before and after editing:
 
-BEFORE:
--------
+BEFORE
+~~~~~~
 
 # ἀπόστολος -ου, ὁ
 
@@ -123,8 +123,8 @@ with special ref. to the Twelve: [Mt 10:2](Mat 10:2), [Mk 3:14](Mrk 3:14), [Lk [
 
 in a wider sense of prominent Christian teachers, as Barnabas, [Ac 14:14](Act 14:14), apparently also Silvanus and Timothy, [I Th 2:6](1Th 2:6), and perhaps Andronicus and Junias (Junia?), [Ro 16:7](Rom 16:7) (v. ICC, in l.); of false teachers, claiming apostleship: II Co [11](Gal 1:11):5, [13](2Co 11:13), [Re 2:2](Rev 2:2). (On the different uses of the term in NT, v. Lft., Gal., 92-101; Cremer, 530; DB, i, 126; DCG, i, 105; Enc. Br., ii, 196 ff.)
 
-AFTER:
-------
+AFTER
+~~~~~
 
 ``ἀπόστολος -ου, ὁ
 
