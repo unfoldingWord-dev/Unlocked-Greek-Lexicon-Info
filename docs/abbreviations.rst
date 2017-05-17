@@ -36,7 +36,8 @@ Abbott-Smith, G. A Manual Greek Lexicon of the New Testament. New York: Charles 
 
 .. note:: The first two (BDAG and LN) **must**  be referenced for every entry. The next two (FFM and BN) are strongly encouraged.
 
-.. _usfm_names:
+.. _usfm:
+
 USFM Names
 ----------
 These are the names that should be used for the USFM form in citation references.
