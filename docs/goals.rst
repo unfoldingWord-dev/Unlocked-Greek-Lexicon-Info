@@ -130,7 +130,7 @@ AFTER
 
 <!-- Status: S2=NeedsEdits -->
 
-<!-- Lexica used for edits:  -->
+<!-- Lexica used for edits: BDAG LN BN FFM -->
 
 ## Word data
 
