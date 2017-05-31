@@ -19,9 +19,9 @@ Abbott-Smith General Abbreviations
 * Att. = Attic
 * bibl. = biblical
 * bis = twice
-* c. = cum (with)
+* \c.\ = cum (with)
 * cf. = confer (compare)
-* cl. = classics, classical
+* \cl.\ = classics, classical
 * cogn. = cognate
 * compar. = comparative
 * contr. = contracted
@@ -31,7 +31,7 @@ Abbott-Smith General Abbreviations
 * esp. = especially
 * ex. = example
 * exc. = except
-* f. = and following (verse)
+* \f.\ = and following (verse)
 * ff. = and following (verses)
 * fig. = figurative
 * freq. = frequent
@@ -51,11 +51,11 @@ Abbott-Smith General Abbreviations
 * infr. = infra (below)
 * Ion. = Ionic
 * l.c. = loco citato (in the place cited--footnote or endnote)
-* m. = masculine
+* \m.\ = masculine
 * metaph. = metaphorically
 * meton. = metonymy
 * MGr. = Modern Greek
-* n. = note, neuter
+* \n.\ = note, neuter
 * neg. = negative
 * nom. = nominative
 * om. = omit, omits
@@ -70,7 +70,7 @@ Abbott-Smith General Abbreviations
 * ptcp. = participle
 * q.v. = quod vide (see, go to see)
 * rei = of the thing
-* s. = sub (under, below)
+* \s.\ = sub (under, below)
 * s.v. = sub voce (under the word or heading given)
 * sc. = scilicet (that is)
 * seq. = sequente (followed by)
@@ -80,7 +80,7 @@ Abbott-Smith General Abbreviations
 * supr. = supra (above, from a previous reference)
 * syn. = synonym
 * Targ. = Targum
-* v. = vide (see, consult)
+* \v.\ = vide (see, consult)
 * vb. = verb
 * v.l. = variant reading
 * v.s. = vide sub (see below)
