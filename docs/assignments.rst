@@ -35,11 +35,11 @@ For example, for the letter Alpha:
 * The *Undefined* TOC file is named `templates/alpha/alphaundeftoc.md <https://git.door43.org/Door43/en-ugl/src/master/templates/alpha/alphaundeftoc.md>`_
 * The *Inserted* TOC file would be `templates/alpha/alphainsrtedtoc.md <https://git.door43.org/Door43/en-ugl/src/master/templates/alpha/alphainsrtedtoc.md>`_ 
 
-Once you have been assigned a letter for editing, you should begin your task using the associated *Word Sort* TOC file, working through the associated lemmas from most frequently used to less frequently used. 
+Once you have been assigned a letter for editing, you should begin your task using the associated *Instances* TOC file, working through the associated lemmas from most frequently used to less frequently used. 
 
 .. note:: These TOC files do not include the lemmas for each letter which were *Inserted* by Alan Bunning, nor do they include the *Undefined* lemmas for each letter that were assigned at the project’s file creation time. See the discussion below. 
 
-Once you have completed editing for all lemmas in the *Word Sort* TOC file for a letter, you will need to move to the associated *Inserted* and *Undefined* TOC files to complete all of the work for each letter. When you have finished the edits for each lemma file (see :ref:`Markdown`), you will need to create a Pull Request (see :ref:`pullrequest`).
+Once you have completed editing for all lemmas in the *Instances* TOC file for a letter, you will need to move to the associated *Word Sort*, *Inserted* and *Undefined* TOC files to complete all of the work for each letter. When you have finished the edits for each lemma file (see :ref:`Markdown`), you will need to create a Pull Request (see :ref:`pullrequest`).
 
 Each letter’s TOC files list all of its lemmas across and then down, showing both the Greek word and the Strong’s Plus ID. 
 
