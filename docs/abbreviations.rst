@@ -40,7 +40,12 @@ Abbott-Smith, G. A Manual Greek Lexicon of the New Testament. New York: Charles 
 
 USFM Names
 ----------
-These are the names that should be used for the USFM form in citation references.
+These are the names that should be used for the USFM form in citation references. For the LXX, we only want to include the Greek names, not the Hebrew names.
+
+      * 1 Km = 1 Kingdoms (Heb. 1 Samuel)
+      * 2 Km = 2 Kingdoms (Heb. 2 Samuel)
+      * 3 Km = 3 Kingdoms (Heb. 1 Kings)
+      * 4 Km = 4 Kingdoms (Heb. 2 Kings)
 
 .. csv-table:: 
    :header: "Standard Name", "USFM Name","Standard Name", "USFM Name"
@@ -86,16 +91,27 @@ These are the names that should be used for the USFM form in citation references
       Zech,zec,,
       Mal,mal,,
       
- LXX and Apocrypha
- ^^^^^^^^^^^^^^^^^
+LXX and Apocrypha
+^^^^^^^^^^^^^^^^^
  
 ====================    =========
 Standard Name           USFM Name
 ====================    =========
+1Esd                    1es
 Tob                     tob
 Jth                     jdt
-Esth(Apocr)             esg
-Wisd (or Wisd of Sol)   wis
-Sir                     sir
+Wisd (or WisdofSol)     wis
+Ecclus (or Sir)         sir
 Bar                     bar
+EpJer                   lje
+Sgof3Childr             s3y
+Sus                     sus
+BelandDr                bel
+1Macc                   1ma
+2Macc                   2ma
+3Macc                   3ma
+4Macc                   4ma
+ProfMan                 man
+Esth(Apocr)             esg
+Psalm151                ps2
 =====================   ==========
