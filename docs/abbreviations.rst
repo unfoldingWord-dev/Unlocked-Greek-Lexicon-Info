@@ -85,3 +85,17 @@ These are the names that should be used for the USFM form in citation references
       Hag,hag,,
       Zech,zec,,
       Mal,mal,,
+      
+ LXX and Apocrypha
+ ^^^^^^^^^^^^^^^^^
+ 
+====================    =========
+Standard Name           USFM Name
+====================    =========
+Tob                     tob
+Jth                     jdt
+Esth(Apocr)             esg
+Wisd (or Wisd of Sol)   wis
+Sir                     sir
+Bar                     bar
+=====================   ==========
