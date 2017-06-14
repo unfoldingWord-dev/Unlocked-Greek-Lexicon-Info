@@ -85,6 +85,78 @@ Abbott-Smith General Abbreviations
 * v.l. = variant reading
 * v.s. = vide sub (see below)
 
+Abbott-Smith Versions and Editions Abbreviations
+------------------------------------------------
+
+* Al = anon. version quoted by Origen
+* Aq = Aquila
+* AV = Authorized version
+* B = Beza
+* E = Elzevir
+* EV = English version (AV and RV)
+* *Gr Ven* = Graecus Venetus
+* L = Lachmann
+* LXX = Septuagint
+* R (in LXX refs) = Sixtine Ed of LXX (1587)
+* Rec = Received Text
+* RV = Revised Version
+* R, txt, mg = RV text, margin
+* Sm = Symmachus
+* T = Tischendorf
+* Th = Theodotion
+* Tr = Tregelles
+* Vg = Vulgate
+* WH = Westcott and Hort
+
+Abbott-Smith Ancient Writers Abbreviations
+------------------------------------------
+
+* Ael = Aelian, 2 AD
+* Aesch = Aeschylus, 5 BC
+* Aeschin = Aeschines, 4 BC
+* Anth = Anthology
+* Antonin = Marcus Aurelius Antoninus, 2 AD
+* Apoll Rhod = Apollonius Rhodius, 2 AD
+* Arist = Aristotle, 4 BC
+* Aristoph = Aristophanes, 5 BC
+* Ath = Athanasius, 4 AD
+* CIG = Corpus Inscriptionum Graecarum
+* Dio Cass = Dio Cassius, 2 AD
+* Diod = Diodorus Siculus, 1 BC
+* Diog Laert = Diogenes Laertius, 2 AD
+* Dion H = Dionysius of Halicarnassus
+* Diosc = Dioscorides, 1-2 AD
+* Eur = Euripides, 5 BC
+* Eustath = Eustathius, 12 AD
+* FlJ = Flavius Josephus, 1 AD
+* Greg Naz = Gregory of Nazianzus, 4 AD
+* Hdt = Herodotus, 5 BC
+* Heliod = Heliodorus, 4 AD
+* Herm = Hermas, 2 AD
+* Hes = Hesiod, 9 BC?
+* Hipp = Hippocrates, 5 BC
+* Hom = Homer, 9 BC?
+* Inscr = Inscriptions
+* Luc = Lucian, 2 AD
+* Lys = Lysias, 5 BC
+* Menand = Menander, 4 BC
+* π = Papyri
+* Paus = Pausanias, 2 AD
+* Phalar = Phalaris, Spurius Epp.
+* Philo = Philo Judaeus, 1 AD
+* Pind = Pindar, 5 BC
+* Plat = Plato, 5-4 BC
+* Plut = Plutarch, 2 AD
+* Polyb = Polybius, 2 BC
+* Socr, *HE* = Socrates, *Historia Ecclesiastica*, 5 AD
+* Soph = Sophocles, 5 BC
+* Strab = Strabo, 1 BC
+* Test Zeb = Testimony of Zebedee, 2 AD
+* Theogn = Theognis, 6 BC
+* Theophr = Theophrastus, 4 BC
+* Thuc = Thucydides, 5 BC
+* Xen = Xenophon, 5-4 BC
+
 Lexica
 ------
 These are the abbreviations to use when listing which lexica have been referenced:
