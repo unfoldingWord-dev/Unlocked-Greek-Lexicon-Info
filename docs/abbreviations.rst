@@ -142,10 +142,10 @@ These are the names that should be used for the USFM form in citation references
       Josh,jos,Rom,rom
       Judg,jdg,1Cor,1co
       Ruth,rut,2Cor,2co
-      1Sam,1sa,Gal,gal
-      2Sam,2sa,Eph,eph
-      1Kgs,1ki,Phil,php
-      2Kgs,2ki,Col,col
+      1Km,1sa,Gal,gal
+      2Km,2sa,Eph,eph
+      3Km,1ki,Phil,php
+      4Km,2ki,Col,col
       1Chr,1ch,1Thess,1th
       2Chr,2ch,2Thess,2th
       Ezra,ezr,1Tim,1ti
