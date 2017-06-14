@@ -18,6 +18,6 @@ Markdown
 7. References to Hebrew lemmas should be entered in the form: [{Hebrew word}](//en-uhl/{Strong’s ID}), e.g. [טָהֳרָה](//en-uhl/H2893). Since that lexicon does not currently exist, following a Hebrew link will currently result in a 404 error, Page Not Found. Note that the Hebrew uses the standard 4-digit Strong’s ID.
 8. Citation references should be in the format: [{Standard form}]({USFM Form}), with each reference separated by a semicolon where:
 
- - Standard form: {Book name} {chapter}:{verse}, or an abbreviated form for references in the same book or same chapter
- - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See :ref:`usfm`. for the list of USFM Book names.
- - Example: [I Co 7:11](1Co 7:11); [8:3](1Co 8:3); [7](1Co 8:7)
+ - Standard form: {Book name} {chapter}:{verse}, or an abbreviated form for references in the same book or same chapter. For books with only 1 chapter, that chapter field should be left blank and no colon added.
+ - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See :ref:`usfm`. for the list of USFM Book names. For books with only 1 chapter, a chapter number of 1 must be entered before the colon and verse number.
+ - Example: [I Co 7:11](1Co 7:11); [8:3](1Co 8:3); [7](1Co 8:7); [Jude 24](jud 1:24)
