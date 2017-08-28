@@ -195,7 +195,7 @@ Abbott-Smith, G. A Manual Greek Lexicon of the New Testament. New York: Charles 
 
 USFM Names
 ----------
-These are the names that should be used for the USFM form in citation references. For the LXX, we only want to include the Greek names, not the Hebrew names.
+These are the names that should be used for the USFM form in citation references. For the LXX, we only want to include the Greek names, not the Hebrew names, as shown below.
 
       * 1 Km = 1 Kingdoms (Heb. 1 Samuel)
       * 2 Km = 2 Kingdoms (Heb. 2 Samuel)
@@ -309,3 +309,18 @@ LXX and Apocrypha
      4Macc,4ma
      ProfMan,man
 
+LXX to Canonical Psalms Mapping
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. csv-table:: 
+   :header: "Standard(LXX) Psalm #", "USFM(Canonical) Psalm #",Verse comparison
+   :widths: 14, 14, 4
+
+      1-8,1-8,Y
+      9,9-10,N
+      10-112,11-113,Y
+      113,114-115,N
+      114-115,116,N
+      146-147,147,N
+      148-150,148-150,Y
+      
