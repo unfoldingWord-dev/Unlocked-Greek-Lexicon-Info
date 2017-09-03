@@ -74,3 +74,15 @@ Markdown
 
 
   9.8 With markdown formatting, a single space will display the highlighted text on same line as the remainder of citation in markdown view. A blank line between the citation header and the citations will display them on separate lines, similar to above, though not the preferred format.
+  
+10. The ability to link to other local Sense data exists using the following syntax. It should be noted that the 01.md files were created with more than 1 space, shown as <sp> following, between the '### Sense' and its associated sense level: e.g '### Sense<sp><sp>1.0:'. You will need to edit each of these marker lines to have a single space between the '### Sense' and its associated sense level for this linking to work: e.g '### Sense<sp>1.0:'
+For this syntax the <level> is the desired sense level for the Marker of the link. The <compressed level> is the <level> with all periods removed. The syntax checker will ensure that the <compressed level> reflects what was entered as <level>. The text '#sense-' preceding that must be entered as shown.
+::
+	**Format**  
+	[Sense <level>](#sense-<compressed level>)
+ 
+	**Examples**  
+	[Sense 1.1](#sense-11)  
+	[Sense 1.2.2](#sense-122)
+
+  
