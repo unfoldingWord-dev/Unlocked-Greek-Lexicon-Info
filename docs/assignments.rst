@@ -37,6 +37,36 @@ For example, for the letter Alpha:
 
 Once you have been assigned a letter for editing, you should begin your task using the associated *Instances* TOC file, working through the associated lemmas from most frequently used to less frequently used. 
 
+There are some syntax specifics that you should be aware of when editting the lemma files. Markdown markers 
+are used to divide the file into sections for data entry. These start with either a "*" or a "#". 
+There are only 3 markers that are allowed to have their associated data on the same line, 
+
+* "* Instances in Scripture:", 
+* "* All Scriptures cited:", and 
+* "### Sense". 
+
+All data associated with every other marker must appear after that marker line, 
+with at least 1 blank line immediately after the marker, followed by the data associated with the marker, 
+followed by at least 1 blank line before the next marker.
+
+When specifying scripture references in the form [...](...) the book names must match what is in the 
+Abbreviations section of this document. What was brought over from Abbott-Smith does not always match the 
+UGL standard. If you specify the first part of a scripture reference within square brackets, you must 
+follow that by the associated scripture link within parenthesis, as shown above.
+
+When specifying Greek (or Hebrew) it should be shown in 1 of 2 forms. Where you want to provide the 
+Strongs ID link, it should be in the form: [<greek>](../<greek strongs-plus ID>/01.md), {or for 
+Hebrew: [<hebrew>](//en-uhl/<hebrew standard strongs ID>)}. If you want to just list a series of 
+Greek and/or Hebrew words, DO NOT enclose them in the square brackets, just enter them as unformatted 
+text in the marker data, e.g.
+
+* "[βαάλ], [ὁ, ἡ], indecl." should appear as "βαάλ, ὁ, ἡ, indecl." and 
+* "[αἰσχύνη] appears to have been substituted in reading for the written [Βάαλ]" should appear as "αἰσχύνη appears to have been substituted in reading for the written Βάαλ"
+
+My examples above are not quite correct, we want to expand/replace EVERY abbreviation in the UGL files.
+
+.. note:: For those of you reviewing the html UGL syntax error reports, the error message: "Marker order is incorrect" is really trying to say that you mistyped/altered the marker text so that the standard order of markers has been violated.
+
 .. note:: These TOC files do not include the lemmas for each letter which were *Inserted* by Alan Bunning, nor do they include the *Undefined* lemmas for each letter that were assigned at the project’s file creation time. See the discussion below. 
 
 Once you have completed editing for all lemmas in the *Instances* TOC file for a letter, you will need to move to the associated *Word Sort*, *Inserted* and *Undefined* TOC files to complete all of the work for each letter. When you have finished the edits for each lemma file (see :ref:`Markdown`), you will need to create a Pull Request (see :ref:`pullrequest`).
