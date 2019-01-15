@@ -4,13 +4,13 @@ Working with Door43 Git Service
 Forking the repository
 ----------------------
 
-Before you begin working on creating or modifying files in one of the the Unlocked Grammar repositories, you will need to fork the project's repository.
+Before you begin working on creating or modifying files in one of the the Unlocked Lexicon repositories, you will need to fork the project's repository.
 
 1. Sign in to your Door43 account at https://git.door43.org/.
 2. Click **Fork** near the upper right-hand corner of the site.
 3. In the *New Fork Repository* window, keep the default Repository Name and Description and click on the **Fork Repository** button. 
 
-.. note:: Once you have forked the repository, you will need to work from the files on your fork only. Once you have committed changes to a file on your fork and are ready to merge those those changes to the Master repo, you will need to create a Pull Request.
+.. note:: Once you have forked the repository, you will need to work from the files on your fork only. Once you have committed changes to a file on your fork and it is free of syntax erros, you are ready to merge those changes to the Master repo. To do this you will need to create a Pull Request.
 
 .. _pullrequest:
 
