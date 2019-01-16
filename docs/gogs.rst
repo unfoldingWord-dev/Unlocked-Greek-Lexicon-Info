@@ -10,7 +10,7 @@ Before you begin working on creating or modifying files in one of the the Unlock
 2. Click **Fork** near the upper right-hand corner of the site.
 3. In the *New Fork Repository* window, keep the default Repository Name and Description and click on the **Fork Repository** button. 
 
-.. note:: Once you have forked the repository, you will need to work from the files on your fork only. Once you have committed changes to a file on your fork and it is free of syntax erros, you are ready to merge those changes to the Master repo. To do this you will need to create a Pull Request.
+.. note:: Once you have forked the repository, you will need to work from the files on your fork only. Once you have committed changes to a file on your fork and it is free of syntax errors, you are ready to merge those changes to the Master repo. To do this you will need to create a Pull Request.
 
 .. _pullrequest:
 
