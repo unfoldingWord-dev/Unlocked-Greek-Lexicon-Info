@@ -56,6 +56,7 @@ e.g.
    [בַּעַל](//en-uhal/H1167), [בֹּשֶׁת](//en-uhal/H1322), [נפל](//en-uhal/H5307), [שׂום](//en-uhal/H7760),
 .. note:: This is a slight difference from the format defined earlier in this Phase of the program. If you have had previous lemma files merged into the main repository with the format, “en-uhl” instead of “en-uhal” these will be programmatically corrected before their Final Review.
 .. note:: Since the tooling for this other lexicon is not operative, as yet, endeavoring to follow one of these links will results in a 404 error, Page Not Found. If you desire to see that lemma at this time, enter the following in a web browser address bar: 
+
 ::
   https://git.door43.org/unfoldingWord/en_uhal/src/branch/master/content/<UHAL Strong’s ID>.md
 
