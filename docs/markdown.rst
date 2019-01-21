@@ -161,6 +161,7 @@ This marker's data should contain each Scripture reference associated with this 
 
 Example Markdown file:
 ^^^^^^^^^^^^^^^^^^^^^^
+
 ::
     # κακῶς
 
