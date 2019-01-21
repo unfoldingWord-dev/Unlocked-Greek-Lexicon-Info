@@ -14,7 +14,7 @@ The markdown format is achieved with the use of markers (marker lines). Any line
 
 #. ``*`` All Scriptures cited: "Yes" or "No", based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.
 
-.. note:: As was discussed in the  `content`_ section, there is a link labeled **refs** for each lemma in its Greek letter Instance TOC which provides a list, in our project's format, of each of the references for that lemma.
+.. note:: As was discussed in the  `Content <http://ugl-info.readthedocs.io/en/latest/assignments.html#content>`_ section, there is a link labeled **refs** for each lemma in its Greek letter Instance TOC which provides a list, in our project's format, of each of the references for that lemma.
 
 Markdown does support specification of comments. Lines 3 and 4 of each lemma file have two comment lines. They start with “<!—“ and end with “-->”. This format specifies non-visible comments, comments that are not shown in the visual form. These two comment lines must remain in the file as entered:
 ::
@@ -23,13 +23,13 @@ Markdown does support specification of comments. Lines 3 and 4 of each lemma fil
 
    <!-- Lexica used for edits:   -->
 
- Editing for the first of these is only allowed for the value of S2 (Stage   - and for the specification of the lexica that were used for editing the file, in the second. The valid values for S2 are:
+Editing for the first of these is only allowed for the value of S2 (Stage   - and for the specification of the lexica that were used for editing the file, in the second. The valid values for S2 are:
   * NeedsEdit  {initial value when you start editing}
   * NeedsReview  {value you must enter before performing the git commit for your edits}
   * NeedsFinalCheck {when 1st Review is complete}
   * ReadyforPublication {when Final Check/2nd Review is complete}
   
-The list of lexica should be entered as abbreviations per the list shown in the   `lexica`_ section.
+The list of lexica should be entered as abbreviations per the list shown in the   `Lexica <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#lexica>`_ section.
 
 
 
