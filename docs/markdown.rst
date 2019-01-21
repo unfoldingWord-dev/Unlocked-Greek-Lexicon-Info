@@ -7,9 +7,9 @@ The lemma files for en_ugl are defined in Markdown format. This format/language 
 Markers
 -------
 The markdown format is achieved with the use of markers (marker lines). Any line which starts with a pound sign, “#” or an asterisk, “*”, is considered a marker. Apart from the first line, there must be at least one blank line before and after each marker. These markers should not be altered or reordered so that consistency across the project can be achieved. Only 3 of these markers allow/require data to be entered as part of the marker line. These are:
-  - %%* Strongs: <Strongs-plus identifier>%%
-  - %%* Instances in the New Testament: <instance count, supplied by the tool that created these files>%%
-  - %%* All Scriptures cited: **Yes** or **No**, based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.%%
+  - ''* Strongs: <Strongs-plus identifier>''
+  - ''* Instances in the New Testament: <instance count, supplied by the tool that created these files>''
+  - ''* All Scriptures cited: **Yes** or **No**, based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.''
 
 .. note:: As was discussed in the  `Content<http://ugl-info.readthedocs.io/en/latest/assignmantes.html#content>`_ section, there is a link labeled **refs** for each lemma in its Greek letter Instance TOC which provides a list, in our project's format, of each of the references for that lemma.
 
