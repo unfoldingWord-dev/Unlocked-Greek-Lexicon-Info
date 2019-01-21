@@ -23,7 +23,7 @@ The project’s data files are all under the folder **content**.  A subfolder fo
 
 In the file ugltoc.md, four columns exist for each letter which have links to the 4 different TOC files for each letter, where each of these will supply links to the associated lemma files for that letter: 
 
-* The *Instances* column for the TOC file with links to words sorted by their instance count. This TOC file, alone, also has a link for each lemma to a separate page that lists every instance of that lemma, and this in our Project’s standard Scripture reference format.
+* The *Instances* column for the TOC file with links to words sorted by their instance count. This TOC file, alone, also has a link, labeled **refs**, for each lemma to a separate page that lists every instance of that lemma, and this in our Project’s standard Scripture reference format.
 * The *Word Sort* column for the TOC file with links to words sorted by their Strong’s Plus ID
 * The *Undefined* column for the TOC file with links to the lemmas that were assigned a temporary, undefined Strong’s Plus ID 
 * The *Inserted* column for the TOC file with links to the lemmas which Alan Bunning has pre-assigned for instances that were not in the Abbott-Smith lexicon. 
