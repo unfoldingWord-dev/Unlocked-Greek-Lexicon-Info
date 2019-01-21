@@ -42,7 +42,7 @@ There is a required format needed to specify a reference to a different Greek le
 References to passages of Scripture, Old Testament, New Testament, of Septuagint also have a fixed format. When to add these will be discussed under the appropriate marker discussions, below. The format for this is:
 ::
   [<Standard book name> <chapter number>:<verse number>](<USFM book name> <chapter number>:<verse number>)
-Where: <Standard book name> and <USFM book name> entries have a defined set of values as documented in the `USFM Names<http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. 
+Where: <Standard book name> and <USFM book name> entries have a defined set of values as documented in the `USFM Names <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. 
    
 Each reference should be terminated with a semi-colon. Sequential references in the same book or same chapter of the same book can be abbreviated in their Standard form, though their USFM form must be complete for each reference. These sequential, abbreviated, references cannot be separated by references to other books.
 e.g.
