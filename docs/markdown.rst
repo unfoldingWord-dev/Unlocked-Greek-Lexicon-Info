@@ -1,89 +1,248 @@
 .. _markdown:
 
 Markdown
---------
-1. All field markers (1 or more #-signs or an asterisk) and their associated data are required for each entity file, unless noted as Optional.
-2. Consecutive lines are merged together for View mode. A blank line is required before AND after each field marker line. Enter a blank line between any two lines that you enter, if you want them to appear on separate lines.
-3. Any line that starts with an exclamation mark is considered a comment and **IS** visible in View mode.
-4. Any data that appears within “<!—“ and “-->” is also considered a comment, but **IS NOT** visible in View mode. This has been used for the two “tag” lines discussed below.
-5. The two lines shown below are “tag” lines, which must not be removed. For the 1st of these the valid Stage 2 Status values are “NeedsEdits”, “NeedsReview”, “NeedsFinalCheck”, and “ReadyforPub”. Each file was created with “NeedsEdits”. When your edits are complete, you should change the Status to “NeedsReview”. You must also list the lexica that you used for your edits on the 2nd “tag” line (a list of values to enter for each lexicon source is provided in the in the  `Lexica <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#lexica>`_ section). It is essential that both of these tag lines be updated accordingly. The first of these will be used for tracking the Project’s Status at the most refined level. The second of these is needed for the review process of each lemma file. There will be some policing of these tag lines once a Pull Request is created. There will also be a check after each Pull Request that all of the field markers are present and in their prescribed order. An email will be sent to the editor for any variance of that ordering, and any omission of updates to the 2 tag lines.
+========
+The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the visual “output”. When you go to a lemma file on the DCS web you see this visual form. When editing a file, you will be working with the markdown form and this document will endeavor to specify the required markdown format of each lemma file to achieve the project-desired output, consistently across all lemmas.
 
-<!-- Status: S2=NeedsEdits -->
+Markers
+-------
+The markdown format is achieved with the use of markers (marker lines). Any line which starts with a pound sign, “#” or an asterisk, “*”, is considered a marker. Apart from the first line, there must be at least one blank line before and after each marker. These markers should not be altered or reordered so that consistency across the project can be achieved. Only 3 of these markers allow/require data to be entered as part of the marker line. These are:
 
-<!-- Lexica used for edits:  {list of lexica} -->
+#. ``*`` Strongs: <Strongs-plus identifier>
 
-.. note:: There is no blank line between these in the 01.md files, since these are non-displayed lines. There should be a blank line before and after this pair.
+#. ``*`` Instances in the New Testament: <instance count, supplied by the tool that created these files>
 
-6. References to other Greek lemmas should be entered in the format: [{Greek word}](../{Strong’s Plus ID}/01.md), e.g. [ἀγαπάω](../G00250/01.md). This is a little cumbersome to enter each time, but we are awaiting some Door43 tooling which will allow us to abbreviate the format. When the Door43 tooling is developed, we will write a script which will replace all of the long format with the abbreviated format, and notify you of this new format for future edits. There were many instances where the Abbott-Smith lexicon and its processing did not provide a Strong’s ID for a word. This is indicated in the files with no characters between the parenthesis. Please update these, from your other sources.
+#. ``*`` All Scriptures cited: "Yes" or "No", based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.
 
-7. References to Hebrew lemmas should be entered in the form: [{Hebrew word}](//en-uhl/{Strong’s ID}), e.g. [טָהֳרָה](//en-uhl/H2893). Since that lexicon does not currently exist, following a Hebrew link will currently result in a 404 error, Page Not Found. Note that the Hebrew uses the standard 4-digit Strong’s ID.
-8. Citation references should be in the format: [{Standard form}]({USFM Form}), with each reference separated by a semicolon where:
+.. note:: As was discussed in the  `Content <http://ugl-info.readthedocs.io/en/latest/assignments.html#content>`_ section, there is a link labeled **refs** for each lemma in its Greek letter Instance TOC which provides a list, in our project's format, of each of the references for that lemma.
 
- - Standard form: {Book name} {chapter}:{verse}, or an abbreviated form for references in the same book or same chapter. For books with only 1 chapter, that chapter field should be left blank and no colon added.
- - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See :ref:`usfm`. for the list of USFM Book names. For books with only 1 chapter, a chapter number of 1 must be entered before the colon and verse number.
- - Example: [I Co 7:11](1Co 7:11); [8:3](1Co 8:3); [7](1Co 8:7); [Jude 24](jud 1:24)
-
-9. Citations should be specified in the format below, where a comma separates the Greek text, the English translations, and the citation references. If multiple citations fall under a category, a citation header with that category can precede those citations. Examples of these, along with their markup visualization, are provided below. Note: <sp> is a single space character
-
-  9.1 **For citations with Greek and associated translation and without citation header:** 
-  ::
-    [greek](link) [greek](link), “translation of the phrase”, [ref 1:1](ref 1:1); etc.
-
-  9.2 **For citations without Greek and associated translation and without citation header:** 
-  ::
-    [ref 1:1](ref 1:1);
-
-  9.3 **For citations with Greek and associated translation and with citation header:**  
-  ::
-    **Citation Header**<sp><sp>  
-    [greek](link) [greek](link), “translation of the phrase”, [ref 1:1](ref 1:1); etc.
-
-  9.4 **For citations without Greek and associated translation but with citation header:**
-  ::
-    **Citation Header**<sp><sp>  
-    [ref 1:1](ref 1:1);
- 
-  9.5 **Example of citations with Greek and associated translation and with citation header:**  
-  ::
-    **Instances with present infinitive following**<sp><sp>  
-    [τί](../G51000/01.md) [πάλιν](../G38250/01.md) θέλετε [ἀκούειν](../G01910/01.md), 
-    “why do you want to hear (it) again?”, [John 9:27](jhn 9:27);  
-    
-    [εἰ](../G14870/01.md) θέλεις [τέλειος](../G50460/01.md) [εἶναι](../G14880/01.md), 
-    "if you would be perfect", [Matt 19:21](mat 19:21)  
-    
-    ἤθελεν [ἀπολογεῖσθαι](../G06260/01.md), "wished to make a defense", [Acts 19:33](act 19:33)  
-    
-    ἤθελον [παρεῖναι](../G39180/01.md) [πρὸς](../G43140/01.md) [ὑμᾶς](../G47710/01.md) 
-    [ἄρτι](../G07370/01.md), "I wish I were with you now", [Gal 4:20](gal 4:20)   
-
-  9.6 **Example of citations without Greek and associated translation but with citation header:**  
-  ::
-    **Instances with aorist infinitive following**<sp><sp>  
-    [Matt 5:40](mat 5:40); [12:38](mat 12:38); [16:25](mat 16:25); [19:17](mat 19:17);
-    [Mark 10:43](mrk 10:43);
-    [Luke 8:20](luk 8:20); [23:8](luk 23:8);
-    [John 12:21](jhn 12:21);
-    [Acts 25:9](act 25:9);
-    [2Cor 11:32](2co 11:32);
-    [Gal 3:2](gal 3:2);
-    [Jas 2:20](jas 2:20);
-    [1Pet 3:10](1pe 3:10)
-
-  9.7 Screen-print of markdown view of these two examples with 2 spaces following citation header (preferred format):
-    [markdown](https://github.com/unfoldingWord-dev/Unlocked-Greek-Lexicon-Info/blob/master/docs/headerformat.jpg)
-
-
-  9.8 With markdown formatting, a single space will display the highlighted text on same line as the remainder of citation in markdown view. A blank line between the citation header and the citations will display them on separate lines, similar to above, though not the preferred format.
-  
-10. The ability to link to other local Sense data exists using the following syntax. It should be noted that the 01.md files were created with more than 1 space, shown as <sp> following, between the '### Sense' and its associated sense level: e.g '### Sense<sp><sp>1.0:'. You will need to edit each of these marker lines to have a single space between the '### Sense' and its associated sense level for this linking to work: e.g '### Sense<sp>1.0:'
-For this syntax the <level> is the desired sense level for the Marker of the link. The <compressed level> is the <level> with all periods removed. The syntax checker will ensure that the <compressed level> reflects what was entered as <level>. The text '#sense-' preceding that must be entered as shown.
+Markdown does support specification of comments. Lines 3 and 4 of each lemma file have two comment lines. They start with “<!—“ and end with “-->”. This format specifies non-visible comments, comments that are not shown in the visual form. These two comment lines must remain in the file as entered:
 ::
-	**Format**  
-	[Sense <level>](#sense-<compressed level>)
- 
-	**Examples**  
-	[Sense 1.1](#sense-11)  
-	[Sense 1.2.2](#sense-122)
 
+   <!-- Status: S2=NeedsEdits -->
+
+   <!-- Lexica used for edits:   -->
+
+Editing for the first of these is only allowed for the value of S2 (Stage 2 of project)  and for the specification of the lexica that were used for editing the file, in the second. The valid values for S2 are:
+  * NeedsEdit  {initial value when you start editing}
+  * NeedsReview  {value you must enter before performing the git commit for your edits}
+  * NeedsFinalCheck {Reviewer enters thiss when 1st Review is complete}
+  * ReadyforPublication {Final Reviewer enters this when Final Check/2nd Review is complete}
   
+The list of lexica should be entered as abbreviations per the list shown in the   `Lexica <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#lexica>`_ section.
+
+References
+----------
+There is a required format needed to specify a reference to a different Greek lemma within the body of this file. When to add these will be discussed under the appropriate marker discussions, below. The format for this is:
+::
+  [<Greek form of another lemma>](../<Strongs-Plus Identifier of that lemma>/01.md)
+   e.g.
+    [πύργος](../G44440/1.md), [εὐνουχίζω](../G21340/01.md, [ἁγνός](../G00530/01.md)
+
+References to passages of Scripture, Old Testament, New Testament, of Septuagint also have a fixed format. When to add these will be discussed under the appropriate marker discussions, below. The format for this is:
+::
+  [<Standard book name> <chapter number>:<verse number>](<USFM book name> <chapter number>:<verse number>)
+   Where: <Standard book name> and <USFM book name> entries have a defined set of values as documented in the `USFM Names<http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. 
+   
+Each reference should be terminated with a semi-colon. Sequential references in the same book or same chapter of the same book can be abbreviated in their Standard form, though their USFM form must be complete for each reference. These sequential, abbreviated, references cannot be separated by references to other books.
+e.g.
+::
+	[1Cor 3:5](1co 3:5); [4:4](1co 4:4); [5](1co 4:5);
+
+There is also a fixed format for a reference to a Hebrew lemma file. When to add these will be discussed under the appropriate marker discussions, below. The format for this is as follows (using a 4-digit Strong’s number):
+  [<Hebrew lemma]( //en-uhal/<Hebrew Strongs ID for that lemma>)
+e.g.
+::
+   [בַּעַל](//en-uhal/H1167), [בֹּשֶׁת](//en-uhal/H1322), [נפל](//en-uhal/H5307), [שׂום](//en-uhal/H7760),
+.. note:: This is a slight difference from the format defined earlier in this Phase of the program. If you have had previous lemma files merged into the main repository with the format, “en-uhl” instead of “en-uhal” these will be programmatically corrected before their Final Review.
+.. note:: Since the tooling for this other lexicon is not operative, as yet, endeavoring to follow one of these links will results in a 404 error, Page Not Found. If you desire to see that lemma at this time, enter the following in a web browser address bar: https://git.door43.org/unfoldingWord/en_uhal/src/branch/master/content/<UHAL Strong’s ID>.md
+
+UGL Markers
+-----------
+The UGL markers will be identified below. They should remain as entered and they should not be reordered. An example follows this discussion.
+
+#. The first line of each lemma file is a marker identifying its lemma,
+ # <Greek lemma>.
+ 
+The initial format which came from the originating Abbott Smith lexicon uses a dash before the second term. For consistency and alignment with newer lexica, change these to replace the “<space>–“with “,<space>“.
+#. Following this are two comment markers used for tracking the status through the editing and review cycles and identifying the sources of data for this revision, as discussed above:
+::   
+  <!-- Status: S2=NeedsEdits -->
+
+  <!-- Lexica used for edits:   -->
+#. ## Word data , is a content/format marker with only other markers associated with it, so no data should be entered for it.
+#. ``*`` Strongs: G**ddddd** , identifies the Strong’s-Plus ID, with the 5-digit **ddddd** notation, for the lemma and was generated by the lemma file creation tool and should remain unchanged.
+#. ``*`` Alternate spellings , is the first marker where editing is allowed to add data to supply any variant or alternative spellings identified in the referenced lexica. This data should be entered as simple Greek text with no surrounding parenthesis as discussed above for referencing other lemmas from this file, since that reference would be back to the current lemma file.
+#. ``*`` Principle Parts: , should be left empty for this Stage of the project.
+#. ``*`` Part of speech: , should contain the unique part of speech for each instance of this lemma, avoiding duplication, each instance terminated with a semi-colon. A list of valid values is provided below. It should be noted that after the 1st Review a script will be run which automatically adds to any existing data the parts of speech data from the UGNT originating file. This data will be in link reference format to the UGG, unfoldingWord Greek Grammar, to give the user’s a hot-link capability to that Greek grammar for each instance identified. The Final Check/2nd Review will condense the manual and automated entries to eliminate any duplication.
+#. ``*`` Instances in the New Testament: <instance count generated by the tool that created these files> , should be left as-is since that instance count was based upon the data from the UGNT. The text for this may erroneously have **Instances in Scripture** or **Instances in the NT** and should be updated to be **Instances in the New Testament**.
+#. ``*`` All Scriptures cited: , should be followed with the word **Yes** or **No**, indicating whether every instance count reference appears in one of more of the data sections for the **#### Citations:** markers, below.
+#. ## Etymology: , should contain any other UGNT lemma that is etymologically tied to this lemma.
+#. ``*`` LXX/Hebrew glosses: , should contain any associated data that was propagated from the A-S lexicon. That propagation may have placed this data under other markers, and if so, move that as the data for this marker. Remove or expand any abbreviations that may remain and check the format for all scripture references against the document format. The LXX book references are generally in the format **<LXX book>.<chapter>.<verse>**. These should be reformatted to reflect the documented reference format. It should be noted that after the 1st review a script will be run to add to this manually edited data each and every LXX reference for the lemma. This script-generated data will not have any Hebrew content, only the verse references. The Final Check/2nd Review will condense the manual and automated entries to eliminate any duplication.
+#. ``*`` Time Period/Ancient Authors: , should have no data supplied for this stage of the project.
+#. ``*`` Related words: , should contain any other Greek lemmas that are identified by the other lexica, that are related, but not etymologically or as synonyms or antonyms.
+#. ``*`` Antonyms for all senses: should contain any other Greek lemmas that are identified by the other lexica as antonyms.
+#. ``*`` Synonyms for all senses: should contain any other Greek lemmas that are identified by the other lexica as synonyms.
+#. ## Senses: is a content/format marker with only other markers associated with it, so no data should be entered for it. It contains one or more Sense sub-markers with their associated sub-sub-markers.
+#. ### Sense <sense number>:  identifies a specific sense of meaning for this lemma. The sense number starts at 1.0 and increments at the decimal digit, the number preceding the decimal point, for each significant sense and increments at the fractional level to differentiate sub-senses of each significant sense. The sense number, and thus the senses, can vary from a single sense with the number 1.0, to complex sub-senses which could be in the form, 3.8.5, which would be the third significant sense, it’s eighth sub-sense, and that sub-sense’s fifth sub-sub-sense. It is recommended that you limit your sense levels to only two decimal digits as, 2.4, but three levels is the maximum, if required for completeness and accuracy. These sense numbers must occur in numerical order in the file, with no missing intermediate numbers; ### Sense 2.4 followed by ### Sense 2.6 would be flagged as a syntax error, since ###Sense 2.5 is missing. Every ### Sense marker is followed only by sub-markers, with no data specified for this marker. Each of the following sub-markers must be present and in the prescribed order given below.
+
+.. note:: Many lexica use a sense numbering system that includes letters and possibly Greek letters, e.g. 1bα. This lexicon will use only numbers for each of the level of senses appropriate for the lemma,with a decimal point separating the sense from the sub-sense and then the sub-sub-sense numers.
+
+#. #### Definition: should contain the top-level definition for this Sense. It can be in sentence or causal form and terminated with a semi-colon.
+#. #### Glosses: should contain one or more one-word meanings for this sense. These should each be followed by a semi-colon.
+#. #### Explanation: this marker should be left empty for this Stage of the project, unless there is discussion needed to explain the *context* of the Definition and/or Glosses.
+#. #### Citations: this should contain each Scripture reference associated with this sense of the lemma. These must follow the format discussed above. Optionally one or more of these references can be preceded by the actual Greek text and/or the English translation, preferably the ULB. 
+
+Example Markdown file:
+::
+    # κακῶς
+
+    <!-- Status: S2=NeedsReview -->
+    <!-- Lexica used for edits: BDAG, FFM, LN, A-S -->
+
+    ## Word data
+
+    * Strongs: G25600
+
+    * Alternate spellings:
+
+    * Principle Parts: 
+
+    * Part of speech: 
+
+    [Adverb](http://ugg.readthedocs.io/en/latest/adverb.html);
+
+    * Instances in Scripture: 16
+
+    * All Scriptures cited: Yes
+
+    ## Etymology: 
+
+    [κακός](../G25560/01.md), bad; evil;
+
+    * LXX/Hebrew glosses: 
+
+    * Time Period/Ancient Authors: 
+
+    * Related words: 
+
+    * Antonyms for all senses
+
+    * Synonyms for all senses: 
+
+    ## Senses 
+
+    ### Sense 1.0:
+
+    #### Definition: 
+
+    Suffer physical harm;
+
+    #### Glosses:
+
+    #### Explanation:
+
+    #### Citations:
+
+    ### Sense 1.1:
+
+    #### Definition: 
+
+    Suffer physical harm without identifying magnitude;
+
+    #### Glosses:
+
+    ill; sick;
+
+    #### Explanation:
+
+    #### Citations:
+
+    [καὶ](../G25320/01.md) [ἀπῆλθεν](../G05650/01.md) [ἡ](../G35880/01.md) [ἀκοὴ](../G01890/01.md) [αὐτοῦ](../G08460/01.md) [εἰς](../G15190/01.md) [ὅλην](../G36500/01.md) [τὴν](../G35880/01.md) [Συρίαν](../G49470/01.md) [καὶ](../G25320/01.md) [προσήνεγκαν](../G43740/01.md) [αὐτῷ](../G08460/01.md) [πάντας](../G39560/01.md) [τοὺς](../G35880/01.md) κακῶς [ἔχοντας](../G21920/01.md) [ποικίλαις](../G41640/01.md) [νόσοις](../G35540/01.md) [καὶ](../G25320/01.md) [βασάνοις](../G09310/01.md) [συνεχομένους](../G49120/01.md) [καὶ](../G25320/01.md) [δαιμονιζομένους](../G11390/01.md) [καὶ](../G25320/01.md) [σεληνιαζομένους](../G45830/01.md) [καὶ](../G25320/01.md) [παραλυτικούς](../G38850/01.md) [καὶ](../G25320/01.md) [ἐθεράπευσεν](../G23230/01.md) [αὐτούς](../G08460/01.md), 
+    "The news about him went out into all of Syria, and the people brought to him all those who were sick, ill with various diseases and pains, those possessed by demons, and the epileptic and paralytic. Jesus healed them.", 
+    [Matt 4:24](mat 4:  -;  [Matt 8:16](mat 8:  -;  [Matt 9:12](mat 9:  -;  [Matt 14:35](mat 14:  -;  [Mark 1:32](mrk 1:  -;  [Mark 1:34](mrk 1:  -;  [Mark 2:17](mrk 2:  -;  [Mark 6:55](mrk 6:  -;  [Luke 5:31](luk 5:  -;  [Luke 7:2](luk 7:  -;  
+
+    ### Sense 1.2:
+
+    #### Definition: 
+
+    Suffer physical harm and identifying its magnitude;
+
+    #### Glosses:
+
+    suffer severly;;
+
+    #### Explanation:
+
+    #### Citations:
+
+    [καὶ](../G25320/01.md) [ἰδοὺ](../G37080/01.md) [γυνὴ](../G11350/01.md) [Χαναναία](../G54780/01.md) [ἀπὸ](../G05750/01.md) [τῶν](../G35880/01.md) [ὁρίων](../G37250/01.md) [ἐκείνων](../G15650/01.md) [ἐξελθοῦσα](../G18310/01.md) [ἔκραζεν](../G28960/01.md) [λέγουσα](../G30040/01.md) [Ἐλέησόν](../G16530/01.md) [με](../G14730/01.md) [κύριε](../G29620/01.md) [υἱὸς](../G52070/01.md) [Δαυείδ](../G11380/01.md) [ἡ](../G35880/01.md) [θυγάτηρ](../G23640/01.md) [μου](../G14730/01.md) κακῶς [δαιμονίζεται](../G11390/01.md), 
+    "Behold, a Canaanite woman came out from that region. She shouted out and said, "Have mercy on me, Lord, Son of David! My daughter is severely demon-possessed."", 
+    [Matt 15:22](mat 15:  -;  [Matt 17:15](mat 17:  -;  [Matt 21:41](mat 21:  -;  
+
+    ### Sense 2.0:
+
+    #### Definition: 
+
+    To be morally evil;
+
+    #### Glosses:
+
+    wickedly; speak wrongly;
+
+    #### Explanation:
+
+    #### Citations:
+
+    [ἀπεκρίθη](../G06110/01.md) [αὐτῷ](../G08460/01.md) [Ἰησοῦς](../G24240/01.md) [Εἰ](../G14870/01.md) κακῶς [ἐλάλησα](../G29800/01.md) [μαρτύρησον](../G31400/01.md) [περὶ](../G40120/01.md) [τοῦ](../G35880/01.md) [κακοῦ](../G25560/01.md) [εἰ](../G14870/01.md) [δὲ](../G11610/01.md) [καλῶς](../G25730/01.md) [τί](../G51010/01.md) [με](../G14730/01.md) [δέρεις](../G11940/01.md), 
+    "Jesus answered him, "If I spoke wrongly, testify about the wrong, but if rightly, why do you hit me?"", 
+    [John 18:23](jhn 18:  -;  [Acts 23:5](act 23:  -;  [Jas 4:3](jas 4:  -;
+
+Valid part of speech, POS, entries:
+-----------------------------------
+The text, **(Other)**, is listed below for clarification. Do not enter that text as part of your POS data. See the `UGG <https://ugg.readthedocs.io/en/latest/front.html>`_  for clarification.
+* Adjective (Other)
+* Ascriptive Adjective
+* Restrictive Adjective
+* Conjunction (Other)
+* Coordinating Conjunction
+* Correlative Conjunction
+* Subordinating Conjunction
+* Adverb (Other)
+* Correlative Adverb
+* Determiner (Other)
+* Definite Article
+* Demonstrative Determiner
+* Differential Determiner
+* Number Determiner
+* Ordinal Determiner
+* Possessive Determiner
+* Quantifier Determiner
+* Relative Determiner
+* Interrogative Determiner
+* Interjection (Other)
+* Directive Interjection
+* Exclamation Interjection
+* Response Interjection
+* Noun (Other)
+* Predicate Adjective Noun
+* Substantive Adjective Noun
+* Preposition (Other)
+* Improper Preposition
+* Pronoun (Other)
+* Reciprocal Pronoun
+* Demonstrative Pronoun
+* Reflexive Pronoun
+* Indefinite Pronoun
+* Personal Pronoun
+* Relative Pronoun
+* Interrogative Pronoun
+* Particle (Other)
+* Error Particle
+* Foreign Particle
+* Verb (Other)
+* Intransitive Verb
+* Linking Verb
+* Modal Verb
+* Periphrastic Verb
+* Transitive Verb
