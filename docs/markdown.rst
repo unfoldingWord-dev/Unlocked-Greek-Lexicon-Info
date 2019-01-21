@@ -162,7 +162,8 @@ This marker's data should contain each Scripture reference associated with this 
 Example Markdown file:
 ^^^^^^^^^^^^^^^^^^^^^^
 
-::
+.. code-block:: markdown
+
     # κακῶς
 
     <!-- Status: S2=NeedsReview -->
