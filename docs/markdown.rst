@@ -1,6 +1,41 @@
 .. _markdown:
 
 Markdown
+========
+The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the visual “output”. When you go to a lemma file on the DCS web you see this visual form. When editing a file, you will be working with the markdown form and this document will endeavor to specify the required markdown format of each lemma file to achieve the project-desired output, consistently across all lemmas.
+
+Markers
+-------
+The markdown format is achieved with the use of markers (marker lines). Any line which starts with a pound sign, “#” or an asterisk, “*”, is considered a marker. Apart from the first line, there must be at least one blank line before and after each marker. These markers should not be altered or reordered so that consistency across the project can be achieved. Only 3 of these markers allow/require data to be entered as part of the marker line. These are:
+
+#. ``*`` Strongs: <Strongs-plus identifier>
+
+#. ``*`` Instances in the New Testament: <instance count, supplied by the tool that created these files>
+
+#. ``*`` All Scriptures cited: "Yes" or "No", based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.
+
+.. note:: As was discussed in the  `content`_ section, there is a link labeled **refs** for each lemma in its Greek letter Instance TOC which provides a list, in our project's format, of each of the references for that lemma.
+
+Markdown does support specification of comments. Lines 3 and 4 of each lemma file have two comment lines. They start with “<!—“ and end with “-->”. This format specifies non-visible comments, comments that are not shown in the visual form. These two comment lines must remain in the file as entered:
+::
+
+   <!-- Status: S2=NeedsEdits -->
+
+   <!-- Lexica used for edits:   -->
+
+ Editing for the first of these is only allowed for the value of S2 (Stage   - and for the specification of the lexica that were used for editing the file, in the second. The valid values for S2 are:
+  * NeedsEdit  {initial value when you start editing}
+  * NeedsReview  {value you must enter before performing the git commit for your edits}
+  * NeedsFinalCheck {when 1st Review is complete}
+  * ReadyforPublication {when Final Check/2nd Review is complete}
+  
+The list of lexica should be entered as abbreviations per the list shown in the   `lexica`_ section.
+
+
+
+
+
+Markdown
 --------
 1. All field markers (1 or more #-signs or an asterisk) and their associated data are required for each entity file, unless noted as Optional.
 2. Consecutive lines are merged together for View mode. A blank line is required before AND after each field marker line. Enter a blank line between any two lines that you enter, if you want them to appear on separate lines.
