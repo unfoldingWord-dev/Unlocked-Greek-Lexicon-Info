@@ -2,13 +2,6 @@
 
 Markdown
 --------
-<nowiki>
-  1) * Strongs: <Strongs-plus identifier>
-
-  2) * Instances in the New Testament: <instance count, supplied by the tool that created these files>
-
-  3) * All Scriptures cited: "Yes" or "No", based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.
-</nowiki>
 1. All field markers (1 or more #-signs or an asterisk) and their associated data are required for each entity file, unless noted as Optional.
 2. Consecutive lines are merged together for View mode. A blank line is required before AND after each field marker line. Enter a blank line between any two lines that you enter, if you want them to appear on separate lines.
 3. Any line that starts with an exclamation mark is considered a comment and **IS** visible in View mode.
