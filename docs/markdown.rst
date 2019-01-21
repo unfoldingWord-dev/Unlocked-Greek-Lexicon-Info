@@ -1,89 +1,66 @@
 .. _markdown:
 
 Markdown
---------
-1. All field markers (1 or more #-signs or an asterisk) and their associated data are required for each entity file, unless noted as Optional.
-2. Consecutive lines are merged together for View mode. A blank line is required before AND after each field marker line. Enter a blank line between any two lines that you enter, if you want them to appear on separate lines.
-3. Any line that starts with an exclamation mark is considered a comment and **IS** visible in View mode.
-4. Any data that appears within “<!—“ and “-->” is also considered a comment, but **IS NOT** visible in View mode. This has been used for the two “tag” lines discussed below.
-5. The two lines shown below are “tag” lines, which must not be removed. For the 1st of these the valid Stage 2 Status values are “NeedsEdits”, “NeedsReview”, “NeedsFinalCheck”, and “ReadyforPub”. Each file was created with “NeedsEdits”. When your edits are complete, you should change the Status to “NeedsReview”. You must also list the lexica that you used for your edits on the 2nd “tag” line (a list of values to enter for each lexicon source is provided in the in the  `Lexica <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#lexica>`_ section). It is essential that both of these tag lines be updated accordingly. The first of these will be used for tracking the Project’s Status at the most refined level. The second of these is needed for the review process of each lemma file. There will be some policing of these tag lines once a Pull Request is created. There will also be a check after each Pull Request that all of the field markers are present and in their prescribed order. An email will be sent to the editor for any variance of that ordering, and any omission of updates to the 2 tag lines.
+========
+The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the visual “output”. When you go to a lemma file on the DCS web you see this visual form. When editing a file, you will be working with the markdown form and this document will endeavor to specify the required markdown format of each lemma file to achieve the project-desired output, consistently across all lemmas.
 
-<!-- Status: S2=NeedsEdits -->
+Markers
+-------
+The markdown format is achieved with the use of markers (marker lines). Any line which starts with a pound sign, “#” or an asterisk, “*”, is considered a marker. Apart from the first line, there must be at least one blank line before and after each marker. These markers should not be altered or reordered so that consistency across the project can be achieved. Only 3 of these markers allow/require data to be entered as part of the marker line. These are:
+  - * Strongs: <Strongs-plus identifier>
+  - * Instances in the New Testament: <instance count, supplied by the tool that created these files>
+  - * All Scriptures cited: **Yes** or **No**, based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.
 
-<!-- Lexica used for edits:  {list of lexica} -->
+.. note:: As was discussed in the  `Content<http://ugl-info.readthedocs.io/en/latest/assignmantes.html#content>`_ section, there is a link labeled **refs** for each lemma in its Greek letter Instance TOC which provides a list, in our project's format, of each of the references for that lemma.
 
-.. note:: There is no blank line between these in the 01.md files, since these are non-displayed lines. There should be a blank line before and after this pair.
+Markdown does support specification of comments. Lines 3 and 4 of each lemma file have two comment lines. They start with “<!—“and end with “-->”. This format specifies non-visible comments, comments that are not shown in the visual form. These two comment lines must remain in the file as entered:
 
-6. References to other Greek lemmas should be entered in the format: [{Greek word}](../{Strong’s Plus ID}/01.md), e.g. [ἀγαπάω](../G00250/01.md). This is a little cumbersome to enter each time, but we are awaiting some Door43 tooling which will allow us to abbreviate the format. When the Door43 tooling is developed, we will write a script which will replace all of the long format with the abbreviated format, and notify you of this new format for future edits. There were many instances where the Abbott-Smith lexicon and its processing did not provide a Strong’s ID for a word. This is indicated in the files with no characters between the parenthesis. Please update these, from your other sources.
+''<!-- Status: S2=NeedsEdits -->''
 
-7. References to Hebrew lemmas should be entered in the form: [{Hebrew word}](//en-uhl/{Strong’s ID}), e.g. [טָהֳרָה](//en-uhl/H2893). Since that lexicon does not currently exist, following a Hebrew link will currently result in a 404 error, Page Not Found. Note that the Hebrew uses the standard 4-digit Strong’s ID.
-8. Citation references should be in the format: [{Standard form}]({USFM Form}), with each reference separated by a semicolon where:
+''<!-- Lexica used for edits:   -->''
 
- - Standard form: {Book name} {chapter}:{verse}, or an abbreviated form for references in the same book or same chapter. For books with only 1 chapter, that chapter field should be left blank and no colon added.
- - USFM form: {USFM Book name} {chapter}:{verse}, supplying all 3 pieces for every instance. See :ref:`usfm`. for the list of USFM Book names. For books with only 1 chapter, a chapter number of 1 must be entered before the colon and verse number.
- - Example: [I Co 7:11](1Co 7:11); [8:3](1Co 8:3); [7](1Co 8:7); [Jude 24](jud 1:24)
+ Editing for the first of these is only allowed for the value of S2 (Stage   - and for the specification of the lexica that were used for editing the file, in the second. The valid values for S2 are:
+  * NeedsEdit  {initial value when you start editing}
+  * NeedsReview  {value you must enter before performing the git commit for your edits}
+  * NeedsFinalCheck {when 1st Review is complete}
+  * ReadyforPublication {when Final Check/2nd Review is complete}
+The list of lexica should be entered as abbreviations per the list shown in the   `Lexica<http://ugl-info.readthedocs.io/en/latest/abbreviations.html#lexica>`_ section.
 
-9. Citations should be specified in the format below, where a comma separates the Greek text, the English translations, and the citation references. If multiple citations fall under a category, a citation header with that category can precede those citations. Examples of these, along with their markup visualization, are provided below. Note: <sp> is a single space character
+References
+----------
+There is a required format needed to specify a reference to a different Greek lemma within the body of this file. When to add these will be discussed under the appropriate marker discussions, below. The format for this is: \\
+''  [<Greek form of another lemma>](../<Strongs-Plus Identifier of that lemma>/01.md)''\\
+e.g.\\
+''       [πύργος](../G44440/1.md), [εὐνουχίζω](../G21340/01.md, [ἁγνός](../G00530/01.md)''
 
-  9.1 **For citations with Greek and associated translation and without citation header:** 
-  ::
-    [greek](link) [greek](link), “translation of the phrase”, [ref 1:1](ref 1:1); etc.
+References to passages of Scripture, Old Testament, New Testament, of Septuagint also have a fixed format. When to add these will be discussed under the appropriate marker discussions, below. The format for this is:
+''[<**Standard book name**> <chapter number>:<verse number>](<**USFM book name**> <chapter number>:<verse number>)''\\
+Where: <**Standard book name**> and <**USFM book name**> entries have a defined set of values as documented in   `USFM Names<http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. Each reference should be terminated with a semi-colon. Sequential references in the same book or same chapter of the same book can be abbreviated in their Standard form, though their USFM form must be complete for each reference. These sequential, abbreviated, references cannot be separated by references to other books.\\
+e.g.\\
+''	[1Cor 3:5](1co 3:  -; [4:4](1co 4:  -; [5](1co 4:  -;''
 
-  9.2 **For citations without Greek and associated translation and without citation header:** 
-  ::
-    [ref 1:1](ref 1:1);
+There is also a fixed format for a reference to a Hebrew lemma file. When to add these will be discussed under the appropriate marker discussions, below. The format for this is as follows (using a 4-digit Strong’s number):\\
+''  [<Hebrew lemma]( //en-uhal/<Hebrew Strongs ID for that lemma>)''\\
+e.g.\\
+''       [בַּעַל](//en-uhal/H  -, [בֹּשֶׁת](//en-uhal/H  -, [נפל](//en-uhal/H  -, [שׂום](//en-uhal/H  -''
 
-  9.3 **For citations with Greek and associated translation and with citation header:**  
-  ::
-    **Citation Header**<sp><sp>  
-    [greek](link) [greek](link), “translation of the phrase”, [ref 1:1](ref 1:1); etc.
+.. note:: This is a slight difference from the format defined earlier in this Phase of the program. If you have had previous lemma files merged into the main repository with the format, “en-uhl” instead of “en-uhal” these will be programmatically corrected before their Final Review.
 
-  9.4 **For citations without Greek and associated translation but with citation header:**
-  ::
-    **Citation Header**<sp><sp>  
-    [ref 1:1](ref 1:1);
- 
-  9.5 **Example of citations with Greek and associated translation and with citation header:**  
-  ::
-    **Instances with present infinitive following**<sp><sp>  
-    [τί](../G51000/01.md) [πάλιν](../G38250/01.md) θέλετε [ἀκούειν](../G01910/01.md), 
-    “why do you want to hear (it) again?”, [John 9:27](jhn 9:27);  
-    
-    [εἰ](../G14870/01.md) θέλεις [τέλειος](../G50460/01.md) [εἶναι](../G14880/01.md), 
-    "if you would be perfect", [Matt 19:21](mat 19:21)  
-    
-    ἤθελεν [ἀπολογεῖσθαι](../G06260/01.md), "wished to make a defense", [Acts 19:33](act 19:33)  
-    
-    ἤθελον [παρεῖναι](../G39180/01.md) [πρὸς](../G43140/01.md) [ὑμᾶς](../G47710/01.md) 
-    [ἄρτι](../G07370/01.md), "I wish I were with you now", [Gal 4:20](gal 4:20)   
+.. note:: Since the tooling for this other lexicon is not operative, as yet, endeavoring to follow one of these links will results in a 404 error, Page Not Found. If you desire to see that lemma at this time, enter the following in a web browser address bar:\\
+https://git.door43.org/unfoldingWord/en_uhal/src/branch/master/content/<UHAL Strong’s ID>.md
 
-  9.6 **Example of citations without Greek and associated translation but with citation header:**  
-  ::
-    **Instances with aorist infinitive following**<sp><sp>  
-    [Matt 5:40](mat 5:40); [12:38](mat 12:38); [16:25](mat 16:25); [19:17](mat 19:17);
-    [Mark 10:43](mrk 10:43);
-    [Luke 8:20](luk 8:20); [23:8](luk 23:8);
-    [John 12:21](jhn 12:21);
-    [Acts 25:9](act 25:9);
-    [2Cor 11:32](2co 11:32);
-    [Gal 3:2](gal 3:2);
-    [Jas 2:20](jas 2:20);
-    [1Pet 3:10](1pe 3:10)
+UGL Markers
+-----------
+The UGL markers will be identified below. They should remain as entered and they should not be reordered. An example follows this discussion.
 
-  9.7 Screen-print of markdown view of these two examples with 2 spaces following citation header (preferred format):
-    [markdown](https://github.com/unfoldingWord-dev/Unlocked-Greek-Lexicon-Info/blob/master/docs/headerformat.jpg)
+  - The first line of each lemma file is a marker identifying its lemma,\\
+'' # <Greek lemma>.''\\
+The initial format which came from the originating Abbott Smith lexicon uses a dash before the second term. For consistency and alignment with newer lexica, change these to replace the “<space>–“with “,<space>“.\\
+  - Following this are two comment markers used for tracking the status through the editing and review cycles and identifying the sources of data for this revision, as discussed above:   
+'' <!-- Status: S2=NeedsEdits -->''\\
 
-
-  9.8 With markdown formatting, a single space will display the highlighted text on same line as the remainder of citation in markdown view. A blank line between the citation header and the citations will display them on separate lines, similar to above, though not the preferred format.
-  
-10. The ability to link to other local Sense data exists using the following syntax. It should be noted that the 01.md files were created with more than 1 space, shown as <sp> following, between the '### Sense' and its associated sense level: e.g '### Sense<sp><sp>1.0:'. You will need to edit each of these marker lines to have a single space between the '### Sense' and its associated sense level for this linking to work: e.g '### Sense<sp>1.0:'
-For this syntax the <level> is the desired sense level for the Marker of the link. The <compressed level> is the <level> with all periods removed. The syntax checker will ensure that the <compressed level> reflects what was entered as <level>. The text '#sense-' preceding that must be entered as shown.
-::
-	**Format**  
-	[Sense <level>](#sense-<compressed level>)
- 
-	**Examples**  
-	[Sense 1.1](#sense-11)  
-	[Sense 1.2.2](#sense-122)
-
-  
+'' <!-- Lexica used for edits:   -->''\\
+  - ## Word data , is a content/format marker with only other markers associated with it, so no data should be entered for it.
+  - * Strongs: Gddddd , identifies the Strong’s-Plus ID, with the 5-digit ddddd notation, for the lemma and was generated by the lemma file creation tool and should remain unchanged.
+  - * Alternate spellings , is the first marker where editing is allowed to add data to supply any variant or alternative spellings identified in the referenced lexica. This data should be entered as simple Greek text with no surrounding parenthesis as discussed above for referencing other lemmas from this file, since that reference would be back to the current lemma file.
+  - * Principle Parts: , should be left empty for this Stage of the project.
