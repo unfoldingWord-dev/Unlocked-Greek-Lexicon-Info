@@ -2,19 +2,21 @@
 
 Markdown
 ========
-The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the visual “output”. When you go to a lemma file on the DCS web you see this visual form. When editing a file, you will be working with the markdown form and this document will endeavor to specify the required markdown format of each lemma file to achieve the project-desired output, consistently across all lemmas.
+The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the visual **output** for the project. When you go to a lemma file on the DCS web you will see this visual form. When editing a file, you will be working with the Markdown form. This document will endeavor to specify the required Markdown format of each lemma file to achieve the project-desired output, consistently across all lemmas.
 
 Markers
 -------
-The markdown format is achieved with the use of markers (marker lines). Any line which starts with a pound sign, “#” or an asterisk, “*”, is considered a marker. Apart from the first line, there must be at least one blank line before and after each marker. These markers should not be altered or reordered so that consistency across the project can be achieved. Only 3 of these markers allow/require data to be entered as part of the marker line. These are:
+The Markdown format is achieved with the use of markers (marker lines). Any line which starts with a pound sign, “#” or an asterisk, “*”, is considered a marker. Apart from the first line, there must be at least one blank line before and after each marker. These markers should not be altered or reordered so that consistency across the project can be achieved. Only 4 of these markers allow/require data to be entered as part of the marker line. These are:
 
-#. ``*`` Strongs: <Strongs-plus identifier>
+#. * Strongs: <Strongs-plus identifier>, see `Strongs <https://ugl-info.readthedocs.io/en/latest/markdown.html#strongs-gddddd>`_ , below.
 
-#. ``*`` Instances in the New Testament: <instance count, supplied by the tool that created these files>
+#. * Instances in the New Testament: <instance count>, see `Instances Count <https://ugl-info.readthedocs.io/en/latest/markdown.html#instances-in-the-new-testament-count>`_ , below.
 
-#. ``*`` All Scriptures cited: "Yes" or "No", based upon whether all of the instances are listed with one or more #### Citations: marker(s) as part of the Sense data at the bottom of the lemma file.
+#. * All Scriptures cited: "Yes" or "No",  see `All Scriptures cited <https://ugl-info.readthedocs.io/en/latest/markdown.html#all-scriptures-cited-yes-no>`_ , below.
 
 .. note:: As was discussed in the  `Content <http://ugl-info.readthedocs.io/en/latest/assignments.html#content>`_ section, there is a link labeled **refs** for each lemma in its Greek letter Instance TOC which provides a list, in our project's format, of each of the references for that lemma.
+
+#. ### Sense <sense number>:, see `Sense <https://ugl-info.readthedocs.io/en/latest/markdown.html#sense-sense-number>`_ , below.
 
 Markdown does support specification of comments. Lines 3 and 4 of each lemma file have two comment lines. They start with “<!—“ and end with “-->”. This format specifies non-visible comments, comments that are not shown in the visual form. These two comment lines must remain in the file as entered:
 ::
@@ -58,7 +60,7 @@ e.g.
 .. note:: Since the tooling for this other lexicon is not operative, as yet, endeavoring to follow one of these links will results in a 404 error, Page Not Found. If you desire to see that lemma at this time, enter the following in a web browser address bar: 
 
 ::
-  https://git.door43.org/unfoldingWord/en_uhal/src/branch/master/content/<UHAL Strong’s ID>.md
+ https://git.door43.org/unfoldingWord/en_uhal/src/branch/master/content/{UHAL Strong’s ID}.md
 
 UGL Markers
 -----------
@@ -66,9 +68,7 @@ The UGL markers will be identified below. They should remain as entered and they
 
 1. # <Greek lemma>
 ^^^^^^^^^^^^^^^^^^
-The first line of each lemma file is a marker identifying its lemma.
- 
-The initial format which came from the originating Abbott Smith lexicon uses a dash before the second term. For consistency and alignment with newer lexica, change these to replace the **<space>–** with **,<space>**. e.g.
+The first line of each lemma file is a marker identifying its lemma. The initial format which came from the originating Abbott Smith lexicon uses a dash before the second term. For consistency and alignment with newer lexica, change these to replace the **<space>–** with **,<space>**. e.g.
 ::
   # ἄμφοδον -ου, το 
 should be changed to:
@@ -115,7 +115,7 @@ This marker's data should contain any other UGNT lemma reference that is etymolo
 
 11. * LXX/Hebrew glosses: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-This marker's data should contain any associated data that was propagated from the A-S lexicon. That propagation may have placed this data under other markers, and if so, move that as the data for this marker. Remove or expand any abbreviations that may remain and check the format for all scripture references against the document format. The LXX book references are generally in the format **<LXX book>.<chapter>.<verse>**. These should be reformatted to reflect the documented reference format. It should be noted that after the 1st review a script will be run to add to this manually edited data each and every LXX reference for the lemma. This script-generated data will not have any Hebrew content, only the verse references. The Final Check/2nd Review will condense the manual and automated entries to eliminate any duplication.
+This marker's data should contain any associated data that was propagated from the A-S lexicon. That propagation may have placed this data under other markers, and if so, move it back to this marker's data. Remove or expand any abbreviations that may remain and check the format for all scripture references against the document format. The LXX book references are generally in the format **<LXX book>.<chapter>.<verse>**. These should be reformatted to reflect the documented reference format. It should be noted that after the 1st review a script will be run to add to this manually edited data each and every LXX reference for the lemma. This script-generated data will not have any Hebrew content, only the verse references. The Final Check/2nd Review will condense the manual and automated entries to eliminate any duplication.
 
 12. * Time Period/Ancient Authors: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -123,7 +123,7 @@ This marker should have no data supplied for this stage of the project.
 
 13. * Related words: 
 ^^^^^^^^^^^^^^^^^^^^
-This marker's data should contain any other Greek lemmas that are identified by the other lexica, that are related to this lemma, but not etymologically or as synonyms or antonyms.
+This marker's data should contain any other Greek lemmas that are identified by the other lexica, as being related to this lemma, but which are not etymologically related and do not qualify as being a synonym or antonym.
 
 14. * Antonyms for all senses: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -181,7 +181,7 @@ Example Markdown file:
 
     [Adverb](http://ugg.readthedocs.io/en/latest/adverb.html);
 
-    * Instances in Scripture: 16
+    * Instances in the New Testament: 16
 
     * All Scriptures cited: Yes
 
@@ -239,14 +239,14 @@ Example Markdown file:
 
     #### Glosses:
 
-    suffer severly;;
+    suffer severely;
 
     #### Explanation:
 
     #### Citations:
 
     [καὶ](../G25320/01.md) [ἰδοὺ](../G37080/01.md) [γυνὴ](../G11350/01.md) [Χαναναία](../G54780/01.md) [ἀπὸ](../G05750/01.md) [τῶν](../G35880/01.md) [ὁρίων](../G37250/01.md) [ἐκείνων](../G15650/01.md) [ἐξελθοῦσα](../G18310/01.md) [ἔκραζεν](../G28960/01.md) [λέγουσα](../G30040/01.md) [Ἐλέησόν](../G16530/01.md) [με](../G14730/01.md) [κύριε](../G29620/01.md) [υἱὸς](../G52070/01.md) [Δαυείδ](../G11380/01.md) [ἡ](../G35880/01.md) [θυγάτηρ](../G23640/01.md) [μου](../G14730/01.md) κακῶς [δαιμονίζεται](../G11390/01.md), 
-    "Behold, a Canaanite woman came out from that region. She shouted out and said, "Have mercy on me, Lord, Son of David! My daughter is severely demon-possessed."", 
+    'Behold, a Canaanite woman came out from that region. She shouted out and said, "Have mercy on me, Lord, Son of David! My daughter is severely demon-possessed."', 
     [Matt 15:22](mat 15:  -;  [Matt 17:15](mat 17:  -;  [Matt 21:41](mat 21:  -;  
 
     ### Sense 2.0:
