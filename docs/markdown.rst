@@ -28,7 +28,7 @@ Markdown does support specification of comments. Lines 3 and 4 of each lemma fil
 Editing for the first of these is only allowed for the value of S2 (Stage 2 of project)  and for the specification of the lexica that were used for editing the file, in the second. The valid values for S2 are:
   * NeedsEdit  {initial value when you start editing}
   * NeedsReview  {value you must enter before performing the git commit for your edits}
-  * NeedsFinalCheck {Reviewer enters thiss when 1st Review is complete}
+  * NeedsFinalCheck {Reviewer enters this when 1st Review is complete}
   * ReadyforPublication {Final Reviewer enters this when Final Check/2nd Review is complete}
   
 The list of lexica should be entered as abbreviations per the list shown in the   `Lexica <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#lexica>`_ section.
@@ -44,7 +44,7 @@ There is a required format needed to specify a reference to a different Greek le
 References to passages of Scripture, Old Testament, New Testament, of Septuagint also have a fixed format. When to add these will be discussed under the appropriate marker discussions, below. The format for this is:
 ::
   [<Standard book name> <chapter number>:<verse number>](<USFM book name> <chapter number>:<verse number>)
-Where: <Standard book name> and <USFM book name> entries have a defined set of values as documented in the `USFM Names <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. 
+<Standard book name> and <USFM book name> entries have a defined set of values as documented in the `USFM Names <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. 
    
 Each reference should be terminated with a semi-colon. Sequential references in the same book or same chapter of the same book can be abbreviated in their Standard form, though their USFM form must be complete for each reference. These sequential, abbreviated, references cannot be separated by references to other books.
 e.g.
@@ -157,7 +157,7 @@ This marker's data should be left empty for this Stage of the project, unless th
 
 21. #### Citations: 
 ^^^^^^^^^^^^^^^^^^^
-This marker's data should contain each Scripture reference associated with this sense of the lemma. These must follow the format discussed above. Optionally one or more of these references can be preceded by the actual UGNT Greek text and/or the English translation, preferably the ULB. 
+This marker's data should contain each Scripture reference associated with this sense of the lemma. For a sense with many references, you may choose a subset of those that you believe would be most beneficial for the users of this lexicon. Omitting some for the sake of brevity would be the reason to specify **No** for the `All Scriptures cited marker <https://ugl-info.readthedocs.io/en/latest/markdown.html#all-scriptures-cited-yes-no>`_ . These citations must follow the format discussed above. Optionally one or more of these references can be preceded by the actual UGNT Greek text and/or the English translation, preferably the ULB. 
 
 Example Markdown file:
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -265,7 +265,7 @@ Example Markdown file:
 
     [ἀπεκρίθη](../G06110/01.md) [αὐτῷ](../G08460/01.md) [Ἰησοῦς](../G24240/01.md) [Εἰ](../G14870/01.md) κακῶς [ἐλάλησα](../G29800/01.md) [μαρτύρησον](../G31400/01.md) [περὶ](../G40120/01.md) [τοῦ](../G35880/01.md) [κακοῦ](../G25560/01.md) [εἰ](../G14870/01.md) [δὲ](../G11610/01.md) [καλῶς](../G25730/01.md) [τί](../G51010/01.md) [με](../G14730/01.md) [δέρεις](../G11940/01.md), 
     "Jesus answered him, "If I spoke wrongly, testify about the wrong, but if rightly, why do you hit me?"", 
-    [John 18:23](jhn 18:  -;  [Acts 23:5](act 23:  -;  [Jas 4:3](jas 4:  -;
+    [John 18:23](jhn 18:23);  [Acts 23:5](act 23:5);  [Jas 4:3](jas 4:3);
 
 Valid part of speech, POS, entries:
 -----------------------------------
