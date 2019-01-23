@@ -16,7 +16,7 @@ In keeping with that goal, we need to make the following changes to A-S:
 2. Update any archaic English
 3. Write definitions to accompany A-S glosses 
 4. Delete any references to other English reference books (e.g. MM, Blass, Jannaris), since these will not be available to the users of our lexicon
-5. Make sure that the information from A-S is in the correct place in the markdown file. Examples include Glosses that were put in the Definition field or Explanation field.
+5. Make sure that the information from A-S is in the correct place in the markdown file. Examples include Glosses that were put in the Definition field or Explanation field. For reference, the PDF version of Abbott-Smith that was used to form the baseline for Phase 1 can be found at `link <https://github.com/translatable-exegetical-tools/Abbott-Smith/blob/master/manualgreeklexic00abborich.pdf>`_.
 
 .. note:: Explanation is optional data for Phase 2 of the project but is used for comments to explain a word’s usage.
 
