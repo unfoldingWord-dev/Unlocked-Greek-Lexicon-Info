@@ -146,7 +146,7 @@ This marker identifies a specific sense of meaning for this lemma. The sense num
 
 18. #### Definition: 
 ^^^^^^^^^^^^^^^^^^^^
-This marker's data should contain the top-level definition for this Sense. It can be in sentence or causal form and terminated with a semi-colon.  Some examples of this clausal form are:
+This marker's data should contain the top-level definition for this Sense. It can be expressed as a full sentence or as a clause and should be terminated with a semi-colon.  Some examples of this clausal form are:
 ::
   aromatic substance burned as incense;
   an altar for burning incense; 
