@@ -100,7 +100,7 @@ This marker should be left empty for this Stage of the project.
 
 7. * Part of speech: 
 ^^^^^^^^^^^^^^^^^^^^
-This marker's data should contain the unique part of speech for each instance of this lemma, avoiding duplication, each instance terminated with a semi-colon. A list of valid values is `provided below <http://ugl-info.readthedocs.io/en/latest/markdown.html#valid-part-of-speech-pos-entries>`_ . It should be noted that after the 1st Review a script will be run which automatically adds to any existing data the parts of speech data from the UGNT originating file. This data will be in link reference format to the UGG, unfoldingWord Greek Grammar, to give the user’s a hot-link capability to that Greek grammar for each instance identified. The Final Check/2nd Review will condense the manual and automated entries to eliminate any duplication.
+This marker's data should contain the unique part of speech for each instance of this lemma, avoiding duplication, each instance terminated with a semi-colon. A list of valid values is `provided below <http://ugl-info.readthedocs.io/en/latest/markdown.html#valid-part-of-speech-pos-entries>`_ . For this lexion this part of speech should reflect the morphology of the lemma, as opposed to its usage. For example an adjective that is used substantially would be treated as a noun from a usage standpoint, but for this lexicon it should be listed as an adjective.
 
 8. * Instances in the New Testament: <count> 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
