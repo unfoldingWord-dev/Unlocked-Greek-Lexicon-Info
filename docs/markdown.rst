@@ -234,7 +234,7 @@ Example Markdown file:
 
     [καὶ](../G25320/01.md) [ἀπῆλθεν](../G05650/01.md) [ἡ](../G35880/01.md) [ἀκοὴ](../G01890/01.md) [αὐτοῦ](../G08460/01.md) [εἰς](../G15190/01.md) [ὅλην](../G36500/01.md) [τὴν](../G35880/01.md) [Συρίαν](../G49470/01.md) [καὶ](../G25320/01.md) [προσήνεγκαν](../G43740/01.md) [αὐτῷ](../G08460/01.md) [πάντας](../G39560/01.md) [τοὺς](../G35880/01.md) κακῶς [ἔχοντας](../G21920/01.md) [ποικίλαις](../G41640/01.md) [νόσοις](../G35540/01.md) [καὶ](../G25320/01.md) [βασάνοις](../G09310/01.md) [συνεχομένους](../G49120/01.md) [καὶ](../G25320/01.md) [δαιμονιζομένους](../G11390/01.md) [καὶ](../G25320/01.md) [σεληνιαζομένους](../G45830/01.md) [καὶ](../G25320/01.md) [παραλυτικούς](../G38850/01.md) [καὶ](../G25320/01.md) [ἐθεράπευσεν](../G23230/01.md) [αὐτούς](../G08460/01.md), 
     "The news about him went out into all of Syria, and the people brought to him all those who were sick, ill with various diseases and pains, those possessed by demons, and the epileptic and paralytic. Jesus healed them.", 
-    [Matt 4:24](mat 4:  -;  [Matt 8:16](mat 8:  -;  [Matt 9:12](mat 9:  -;  [Matt 14:35](mat 14:  -;  [Mark 1:32](mrk 1:  -;  [Mark 1:34](mrk 1:  -;  [Mark 2:17](mrk 2:  -;  [Mark 6:55](mrk 6:  -;  [Luke 5:31](luk 5:  -;  [Luke 7:2](luk 7:  -;  
+    [Matt 4:24](mat 4:24);  [Matt 8:16](mat 8:16);  [Matt 9:12](mat 9:12);  [Matt 14:35](mat 14:35);  [Mark 1:32](mrk 1:32);  [Mark 1:34](mrk 1:34);  [Mark 2:17](mrk 2:17);  [Mark 6:55](mrk 6:55);  [Luke 5:31](luk 5:11);  [Luke 7:2](luk 7:2);  
 
     ### Sense 1.2:
 
@@ -252,7 +252,7 @@ Example Markdown file:
 
     [καὶ](../G25320/01.md) [ἰδοὺ](../G37080/01.md) [γυνὴ](../G11350/01.md) [Χαναναία](../G54780/01.md) [ἀπὸ](../G05750/01.md) [τῶν](../G35880/01.md) [ὁρίων](../G37250/01.md) [ἐκείνων](../G15650/01.md) [ἐξελθοῦσα](../G18310/01.md) [ἔκραζεν](../G28960/01.md) [λέγουσα](../G30040/01.md) [Ἐλέησόν](../G16530/01.md) [με](../G14730/01.md) [κύριε](../G29620/01.md) [υἱὸς](../G52070/01.md) [Δαυείδ](../G11380/01.md) [ἡ](../G35880/01.md) [θυγάτηρ](../G23640/01.md) [μου](../G14730/01.md) κακῶς [δαιμονίζεται](../G11390/01.md), 
     'Behold, a Canaanite woman came out from that region. She shouted out and said, "Have mercy on me, Lord, Son of David! My daughter is severely demon-possessed."', 
-    [Matt 15:22](mat 15:  -;  [Matt 17:15](mat 17:  -;  [Matt 21:41](mat 21:  -;  
+    [Matt 15:22](mat 15:22);  [Matt 17:15](mat 17:15);  [Matt 21:41](mat 21:41);  
 
     ### Sense 2.0:
 
