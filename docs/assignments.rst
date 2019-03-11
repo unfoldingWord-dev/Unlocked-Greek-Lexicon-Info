@@ -16,7 +16,8 @@ The project’s data files are all under the folder **content**.  A subfolder fo
 
 .. note:: If you open the project’s **content** folder, you will be presented with an Index page with each of the over 6000 Strongs IDs shown. Selecting one will move you into the View mode for the given lemma. 
 
-**To more easily access these individual lemma files**
+To more easily access these individual lemma files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Open the `ugltoc.md file <https://git.door43.org/Door43/en-ugl/src/master/templates/ugltoc.md>`_ in the **templates** folder for a list of the **Table of Contents (TOC)** files for each letter, or 
 * Open one of the letter’s TOC files: templates/{Greek letter}/{Greek letter}toc.md, e.g. `templates/alpha/alphatoc.md <https://git.door43.org/Door43/en-ugl/src/master/templates/alpha/alphatoc.md>`_ . 
