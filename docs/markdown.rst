@@ -205,7 +205,7 @@ This marker's data should contain any associated data that was propagated from t
     [Exod 22:11](exo 22:11), [10](exo 22:10), [Amos 3:3](amo 3:3), [4](amo 3:4).
 
      {Scripture and Hebrew links with leading narrative}
-           ;in LXX [Num 24:2](num 24:2) ([ראה](//en-uhal/H7200)), [Job 10:4](job 10:4), [39:26](job 39:26).
+           ;in LXX [Num 24:2](num 24:2) [ראה](//en-uhal/H7200), [Job 10:4](job 10:4), [39:26](job 39:26).
 
       {Hebrew link only with leading narrative and trailing gloss}
            ;in LXX chiefly for [רעע](//en-uhal/H7489) : evildoer.
