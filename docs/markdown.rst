@@ -45,17 +45,17 @@ The different formats for this are:
  {Basic form with no narrative or Sense Link}:
   [<Greek form of another lemma>](../<Strongs-Plus Identifier of that lemma>/01.md): <Definition or Gloss for that lemma>
    e.g.
-    [πύργος](../G44440/1.md): a tower, [ἁγνός](../G00530/01.md): free from ceremonial defilement
+    [πύργος](../G44440/01.md): a tower, [ἁγνός](../G00530/01.md): free from ceremonial defilement
 
  {Basic form with textual narrative}:
   [<Greek form of another lemma>](../<Strongs-Plus Identifier of that lemma>/01.md): <Definition or Gloss for that lemma>; <textual narrative>
    e.g.
-    [πύργος](../G44440/1.md): a tower, [ἁγνός](../G00530/01.md): free from ceremonial defilement; to be clean from a Jewish ceremonial standpoint
+    [πύργος](../G44440/01.md): a tower, [ἁγνός](../G00530/01.md): free from ceremonial defilement; to be clean from a Jewish ceremonial standpoint
 
  {Basic form with a Sense Link}:
   [<Greek form of another lemma>](../<Strongs-Plus Identifier of that lemma>/01.md): <Definition or Gloss for that lemma>; <Sense Link>
    e.g.
-    [πύργος](../G44440/1.md): a tower, [ἁγνός](../G00530/01.md): free from ceremonial defilement; [Sense 1.1](#sense-11) 
+    [πύργος](../G44440/01.md): a tower, [ἁγνός](../G00530/01.md): free from ceremonial defilement; [Sense 1.1](#sense-11) 
 
 
 Scripture Links
