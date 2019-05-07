@@ -256,7 +256,7 @@ This marker's data should be left empty for this Stage of the project, unless th
 
 21. #### Citations: 
 ^^^^^^^^^^^^^^^^^^^
-This marker's data should contain each Scripture reference associated with this sense of the lemma. For a sense with many references, you may choose a subset of those that you believe would be most beneficial for the users of this lexicon. Omitting some for the sake of brevity would be the reason to specify **No** for the `9. * All Scriptures cited: Yes/No`_ . These citations must follow the format discussed in `Scripture Links`_, above. Optionally one or more of these references can be preceded by the actual UGNT Greek text and/or the English translation, the latter should suffixed with the translation source identified as three to four capital letters enclosed in parenthesis: e.g. (ULB),(NASB),(ESV),or (NIV). There should be a semicolon preceeding the UGNT text, if entered, and a semicolon preceeding the English translation, if entered. If either or both of these are entered they should be separated from the references with a colon. Multiple citation instances should be separated by a comma. No termination mark should be entered for this data except for the citation data of the last Sense level in the lemma file. For this last citation data in the file, it should be terminated with a period. As discussed in `8. * Instances in the New Testament: <count>`_, above, annotations to this citation data should be made to identify which references have more than 1 instance of this lemma. Examples of the format for this annotation are:
+This marker’s data should contain each Scripture reference associated with this sense of the lemma. For a sense with many references, you may choose a subset of those that you believe would be most beneficial for the users of this lexicon. Omitting some for the sake of brevity would be the reason to specify No for the `9. * All Scriptures cited: Yes/No`_ . These citations must follow the format discussed in `Scripture Links`_, above. Optionally one or more of these references can be preceded by a narrative discussion or by either or both of the actual UGNT Greek text and the English translation, the latter should suffixed with the translation source identified as three to four capital letters enclosed in parenthesis: e.g. (ULB),(NASB),(ESV),or (NIV). If narrative discussion is entered this should be preceded with a tilde, “~”. This narrative discussion may include a single `Greek Lemma Link`_ or `Hebrew Lemma Links`_ but these must follow the documented syntax for those, with the exception that this Greek lemma link does not require a gloss or definition, but if present, it should be preceded by a comma, and not a colon as in the standard form. If a gloss or definition for a Hebrew lemma link is provided, it should be preceded by a comma, and not a colon as in the standard form. If any narrative discussion is entered it should precede the UGNT text or English translation. There should be a semicolon preceding the UGNT text, if entered, and a semicolon preceding the English translation, if entered. If any or all of these three preceding data pieces are entered they should be separated from the references with a colon. It should be noted that any narrative discussion is terminated by either a semicolon or colon, as documented above. Multiple citation instances should be separated by a comma. No termination mark should be entered for this data except for the citation data of the last Sense level in the lemma file. For this last citation data in the file, it should be terminated with a period. As discussed in `8. * Instances in the New Testament: <count>`_, above, annotations to this citation data should be made to identify which references have more than 1 instance of this lemma. As with other marker data, this can span multiple, consecutive, lines in the file with no blank lines between them. Examples of the format for this annotation are:
 ::
 
      {Under Sense 1.0 of lemma καινός, G25370}
@@ -273,6 +273,25 @@ This marker's data should contain each Scripture reference associated with this 
      {Under Sense 2.0 of lemma κἄν, G25790}
   [Luke 12:38](luk 12:38){2 instances, one(1) for this Sense and one(1) for [Sense 1.0](#sense-10)}
 
+      Example with preceding narrative discussion only, without a Greek or Hebrew lemma kink:
+  ~Gabbatha, the Greek transliteration of an uncertain Aramaic word: [John 19:13](jhn 19:13)
+
+      Example with preceding narrative discussion only, which includes a Greek lemma link without a gloss:
+  ~Gabbatha, the Greek transliteration of an uncertain Aramaic word used as the equivalent of [λιθόστρωτον](../G30380/01.md): [John 19:13](jhn 19:13)
+
+      Example with preceding narrative discussion only, which includes a Greek lemma link with a gloss:
+  ~Gabbatha, the Greek transliteration of an uncertain Aramaic word used as the equivalent of [λιθόστρωτον](../G30380/01.md), stone pavement: [John 19:13](jhn 19:13)
+
+      Example with preceding UGNT and English Translation, only:
+  ;[καὶ](../G25320/01.md) [γὰρ](../G10630/01.md) [ὁ](../G35880/01.md) [θεὸς](../G23160/01.md) [ἡμῶν](../G14730/01.md) [πῦρ](../G44420/01.md) καταναλίσκον, 
+  ;"For our God is a consuming fire."
+  :[Heb 12:29](heb 12:29)
+
+      Example with preceding narrative discussion, UGNT, and English Translation:
+  ~This addresses a significant aspect of God
+  ;[καὶ](../G25320/01.md) [γὰρ](../G10630/01.md) [ὁ](../G35880/01.md) [θεὸς](../G23160/01.md) [ἡμῶν](../G14730/01.md) [πῦρ](../G44420/01.md) καταναλίσκον, 
+  ;"For our God is a consuming fire."
+  :[Heb 12:29](heb 12:29)
 
 Example Markdown file:
 ^^^^^^^^^^^^^^^^^^^^^^
