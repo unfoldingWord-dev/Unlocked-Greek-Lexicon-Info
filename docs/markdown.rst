@@ -68,11 +68,19 @@ References to passages of Scripture, Old Testament, New Testament, of Septuagint
 
 Note: <Standard book name> and <USFM book name> entries have a defined set of values in a predefined format as documented in the `USFM Names <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. 
    
-Each instance of a reference should be separated with a comma. Sequential references in the same book or same chapter of the same book can be abbreviated in their Standard form, though their USFM form must be complete for each reference. These sequential, abbreviated, references cannot be separated by references to other books.
+Each instance of a reference should be separated with a comma when a list of verses is desired.  A range of verses can be specified with a dash, "-", supplied between the start and the end of the range.  Sequential references in the same book or same chapter of the same book can be abbreviated in their Standard form, though their USFM form must be complete for each reference. These sequential, abbreviated, references cannot be separated by references to other books.
 e.g.
 ::
 
-	[1Cor 3:5](1co 3:5), [4:4](1co 4:4), [5](1co 4:5)
+
+   Example of a list of verse referenes:
+     [1Cor 3:5](1co 3:5), [4:4](1co 4:4), [5](1co 4:5)
+
+   Example of a range of verses reference:
+     [Mark 12:36](mrk 12:36)-[38](mrk 12:38)
+
+   Example of a range of verses reference within a list of other verse references:
+     [Matt 22:43](mat 22:43), [45](mat 22:45), [Mark 12:36](mrk 12:36)-[38](mrk 12:38), [Luke 20:42](luk 20:42), [44](luk 20:44)
 
 Hebrew Lemma Links
 ^^^^^^^^^^^^^^^^^^
