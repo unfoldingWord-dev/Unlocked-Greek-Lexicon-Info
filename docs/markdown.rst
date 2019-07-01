@@ -305,7 +305,7 @@ This marker’s data should contain each Scripture reference associated with thi
   :[Heb 12:29](heb 12:29)
 
       Example with preceding narrative discussion, UGNT, and English Translation:
-  ~This addresses a significant aspect of God
+  ~This addresses a significant aspect of God:
   ;[καὶ](../G25320/01.md) [γὰρ](../G10630/01.md) [ὁ](../G35880/01.md) [θεὸς](../G23160/01.md) [ἡμῶν](../G14730/01.md) [πῦρ](../G44420/01.md) καταναλίσκον, 
   ;"For our God is a consuming fire." (ULB)
   :[Heb 12:29](heb 12:29)
