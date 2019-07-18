@@ -61,11 +61,25 @@ The different formats for this are:
 
 Scripture Links
 ^^^^^^^^^^^^^^^
-References to passages of Scripture, Old Testament, New Testament, of Septuagint also have a fixed format. When to add these will be discussed under the appropriate marker discussions, below. The format for this is:
+References to passages of Scripture, Old Testament, New Testament, of Septuagint also have a fixed format. When to add these will be discussed under the appropriate marker discussions, below. The basic format for this is given below and is followed by the optional abbreviated formats if consecutive passage citations are in the same book and then more abbreviated if consecutive passage citations are in the same book and the same chapter of that book. This basic format is slightly altered for books that have only one chapter. The Standard portion does not specify chapter 1, while the USFM format requires that chapter specification:
 ::
+  Basic format:
+     [<Standard book name> <chapter number>:<verse number>](<USFM book name> <chapter number>:<verse number>)
 
-  [<Standard book name> <chapter number>:<verse number>](<USFM book name> <chapter number>:<verse number>)
+  Abbreviated format if consecutive passage citations are in the same book:
+     [<chapter number>:<verse number>](<USFM book name> <chapter number>:<verse number>)
 
+  Abbreviated format if consecutive passage citations are in the same book and same chapter of that book:
+     [<verse number>](<USFM book name> <chapter number>:<verse number>)
+
+  Basic format for books with only 1 chapter:
+     [<Standard book name> <verse number>](<USFM book name> 1:<verse number>)
+     
+  Abbreviated format for books with only 1 chapter if consecutive passage citations are in the same book:
+     [<verse number>](<USFM book name> 1:<verse number>)
+
+Note: For the abbreviated formats, only the Standard portion of the reference is abbreviated, the USFM portion must always be fully specified
+  
 Note: <Standard book name> and <USFM book name> entries have a defined set of values in a predefined format as documented in the `USFM Names <http://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ section. 
    
 Each instance of a reference should be separated with a comma when a list of verses is desired.  A range of verses can be specified with a dash, "-", supplied between the start and the end of the range.  Sequential references in the same book or same chapter of the same book can be abbreviated in their Standard form, though their USFM form must be complete for each reference. These sequential, abbreviated, references cannot be separated by references to other books.
@@ -73,8 +87,11 @@ e.g.
 ::
 
 
-   Example of a list of verse referenes:
+   Example of a list of verse references where consecutive references have the same book and then where consecutive references have the same book and chapter:
      [1Cor 3:5](1co 3:5), [4:4](1co 4:4), [5](1co 4:5)
+     
+   Example of verse references for one-chapter books followed by a reference to a new verse in the same book:
+     [2John 8](2jn 1:8),  [10](2jn 1:10),
 
    Example of a range of verses reference:
      [Mark 12:36](mrk 12:36)-[38](mrk 12:38)
@@ -455,4 +472,3 @@ The following is a list of the valid values for Textual Representation and their
     Interjection exclamation, interjection_exclamation
     Interjection directive, interjection_directive
     Interjection response, interjection_response
-
