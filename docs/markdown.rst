@@ -3,7 +3,7 @@
 Markdown
 ========
 
-The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the **visual output** for the project. When you select a lemma file on the DCS web you will see this visual form, though the final, published, visual form may be slightly different. When editing a file, you will be working in the Markdown language environment. This document will endeavor to specify the required Markdown format and content of each lemma file to achieve the project-desired output, consistently across all lemmas for all editors. Markdown is blank line sensitive which means that data within a marker can be entered on multiple consecutive lines and will be merged together from a syntax checking and the visual output perspective. A blank line must be entered between data lines to have that data treated as separate from a syntax checking and the visual output perspective. Markdown also provides a way to add emphasis to data that is entered. Text that is enclosed within a single “*” or a single “_” will be italicized. Text that is enclosed within double “*” or double “_” will be displayed bold. These can be combined to achieve both forms of emphasis. The following example will be displayed as below:
+The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the **visual output** for the project. When you select a lemma file on the DCS web you will see this visual form, though the final, published, visual form may be slightly different. When editing a file, you will be working in the Markdown language environment. This document will endeavor to specify the required Markdown format and content of each lemma file to achieve the project-desired output, consistently across all lemmas for all editors. Markdown is blank line sensitive which means that data within a marker can be entered on multiple consecutive lines and will be merged together from a syntax checking and the visual output perspective. A blank line must be entered between data lines to have that data treated as separate from a syntax checking and the visual output perspective. Markdown also provides a way to add emphasis to data that is entered. Text that is enclosed within a single “*” or a single “_” will be italicized. Text that is enclosed within double “*” or double “_” will be displayed bold. These can be combined to achieve both forms of emphasis. The following example will be displayed as below.
 
 ..
   Comments below were added by Dave Statezni in an attempt to formally document each of the syntax requirements
@@ -82,16 +82,17 @@ The different formats for this are:
 Scripture Links
 ^^^^^^^^^^^^^^^
 References to passages of Scripture, Old Testament, New Testament, of Septuagint also have a fixed format. When to add these will be discussed under the appropriate marker discussions, below. The basic format for this is given below and is followed by the optional abbreviated formats if consecutive passage citations are in the same book and then more abbreviated if consecutive passage citations are in the same book and the same chapter of that book. This basic format is slightly altered for books that have only one chapter. The Standard portion does not specify chapter 1, while the USFM format requires that chapter specification:
+
 ..
-Requirement .2.1 Standard book name must follow table definitions and be followed by a space, if present
-Requirement .2.2 Standard chapter number must be followed by a colon, if present
-Requirement .2.3 Standard verse number (always required)
-Requirement .2.4 USFM BCV follow table and normal format (always required)
-Requirement .2.5 For books with only one chapter Standard chapter number and colon must be omitted
-Requirement .2.6 Standard book may be omitted for consecutive references to same book, with one or more chapters
-Requirement .2.7 Standard book, chapter, and its colon, may be omitted for consecutive references to same book and chapter
-Requirement .2.8 Psalms Standard to USFM chapter comparison per LXX to Canonical Mapping
-Requirement .2.9 Psalms Standard to USFM verse comparion decision per LXX to Canonical Mapping
+  Requirement .2.1 Standard book name must follow table definitions and be followed by a space, if present
+  Requirement .2.2 Standard chapter number must be followed by a colon, if present
+  Requirement .2.3 Standard verse number (always required)
+  Requirement .2.4 USFM BCV follow table and normal format (always required)
+  Requirement .2.5 For books with only one chapter Standard chapter number and colon must be omitted
+  Requirement .2.6 Standard book may be omitted for consecutive references to same book, with one or more chapters
+  Requirement .2.7 Standard book, chapter, and its colon, may be omitted for consecutive references to same book and chapter
+  Requirement .2.8 Psalms Standard to USFM chapter comparison per LXX to Canonical Mapping
+  Requirement .2.9 Psalms Standard to USFM verse comparion decision per LXX to Canonical Mapping
 
 ::
   Basic format:
@@ -222,9 +223,10 @@ should be changed to:
 2. Comment Markers
 ^^^^^^^^^^^^^^^^^^
 Markdown does support specification of comments. Lines 3 and 4 of each lemma file have two comment lines. They start with “<!—“ and end with “-->”. This format specifies non-visible comments, that is comments that are in the lemma file but are not shown in the visual form. These two comment lines must remain in the file as entered:
+
 ..
-Requirement 2.1 Status Comment marker required with documented values
-Requirement 2.2 Lexica Used Comment marker required with vales entered per "Abbreviations/Lexica" paragraph
+  Requirement 2.1 Status Comment marker required with documented values
+  Requirement 2.2 Lexica Used Comment marker required with vales entered per "Abbreviations/Lexica" paragraph
 
 ::
 
@@ -249,30 +251,34 @@ Requirement 3.1 Marker required followed by blank line, no data, and no terminat
 4. * Strongs: Gddddd. 
 ^^^^^^^^^^^^^^^^^^^^^
 Identifies the Strong’s-Plus ID, with the 5-digit **ddddd** notation, for the lemma and was generated by the lemma file creation tool and should remain unchanged with the exception of adding a terminating period.
+
 ..
-Requirement 4.1 Marker required with in-line data and in-line period terminator
-Requirement 4.2 Data is in form "Gnnnnn", where nnnnn is the 5-digit Strong's-Plus ID
+  Requirement 4.1 Marker required with in-line data and in-line period terminator
+  Requirement 4.2 Data is in form "Gnnnnn", where nnnnn is the 5-digit Strong's-Plus ID
 
 5. * Alternate spellings 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 This is the first marker where editing is allowed to add data to supply any variant or alternative spellings identified in the referenced lexica. This data should be entered as simple Greek text with no surrounding bracketing or parenthesis as discussed in `Greek Lemma Link`_ for referencing other Greek lemmas from this file, since that reference would point back to the current lemma file. Each instance that is specified should be separated with a comma. No additional data is required but any needed textual narrative for an instance should be separated from the Greek by a semicolon. If data is present it should data be terminated with a period.
+
 ..
-Requirement 5.1 Marker required 
-Requirement 5.2 Simple Greek text is required with no linkage punctuation as in the Greek Lemma links
-Requirement 5.3 Each instance must be separated by a comma
-Requirement 5.4 Any textual narrative should follow its assocaited Greek word, with a preceding semicolon.
-Requirement 5.5 If any data is entered it must be terminated with a period.
+  Requirement 5.1 Marker required 
+  Requirement 5.2 Simple Greek text is required with no linkage punctuation as in the Greek Lemma links
+  Requirement 5.3 Each instance must be separated by a comma
+  Requirement 5.4 Any textual narrative should follow its assocaited Greek word, with a preceding semicolon.
+  Requirement 5.5 If any data is entered it must be terminated with a period.
 
 6. * Principle Parts: 
 ^^^^^^^^^^^^^^^^^^^^^
 This marker should be left empty for this Stage of the project.
+
 ..
-Requirement 6.1 Marker required 
-Requirement 6.2 No data should be entered for Phase 2 of the project.
+  Requirement 6.1 Marker required 
+  Requirement 6.2 No data should be entered for Phase 2 of the project.
 
 7. * Part of speech: 
 ^^^^^^^^^^^^^^^^^^^^
 This marker's data should contain all of the Part of speech (POS) instances that are found in the UGNT. This data will be provided to each editor as a text file for each Greek letter. Within each file is a sorted list of the Strong's-Plus IDs with their associated POS data provided in the required link format to the correlative UGG section. The appropriate lines in that file can then be copied and then pasted into the POS marker section. This can be one or more lines which should have intermediate lines ending in a comma and the final line ending in a period.
+
 ..
 Requirement 7.1 Marker required 
 Requirement 7.2 Multiple instances must be separated by a comma
@@ -282,62 +288,66 @@ Requirement 7.4 Each instance must be formated as: [<UGG Chapter title>](<Web Li
 8. * Instances in the New Testament: <count> 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This count value should be left as-is since that instance count was based upon the data from the UGNT. The text for this marker may erroneously be **Instances in Scripture** or **Instances in the NT** and should be updated to be **Instances in the New Testament**. This should be terminated with a period. 
+
 ..
-Requirement 8.1 Marker required with integer count following the colon
-Requirement 8.2 A period should terminate this marker and its data
-Requirement 8.3 No other data should be present.
+  Requirement 8.1 Marker required with integer count following the colon
+  Requirement 8.2 A period should terminate this marker and its data
+  Requirement 8.3 No other data should be present.
 
 9. * All Scriptures cited: Yes/No
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This marker should be followed with the word **Yes** or **No**, indicating whether every instance count reference appears in one of more of the data sections for the `21. #### Citations:`_, below. This line should be terminated with a period.
+
 ..
-Requirement 9.1 Marker required with text "Yes" or "No" following the colon
-Requirement 9.2 A period should terminate this marker and its data
-Requirement 9.3 No other data should be present.
+  Requirement 9.1 Marker required with text "Yes" or "No" following the colon
+  Requirement 9.2 A period should terminate this marker and its data
+  Requirement 9.3 No other data should be present.
 
 10. ## Etymology: 
 ^^^^^^^^^^^^^^^^^
 This marker's data should contain any `Greek Lemma Link`_ that is explaining compound words or is explaining some names and places. Any usage in Abbott-Smith of the symbol “<” to designate words that are “derived from or related to" the lemma or any similar identification in other lexica should be moved to `13. * Related words:`_, below. Where present this data should be terminated with a period.
+
 ..
-Requirement 10.1 Marker required 
-Requirement 10.2 This marker should contain Greek Lemma links, with all of its optional sub-parts
-Requirement 10.2.1.1 Greek text within square brackets
-Requirement 10.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
-Requirement 10.2.1.3 trailing "/01.md)"
-Requirement 10.2.1.4 Required gloss prefaced by colon
-Requirement 10.2.1.5 Optional textual narrative following gloss data
-Requirement 10.2.1.6 Optional Sense link following gloss data
-Requirement 10.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
-Requirement 10.3 Each instance must be separate by a comma
-Requirement 10.4 A period should terminate this marker data.
+  Requirement 10.1 Marker required 
+  Requirement 10.2 This marker should contain Greek Lemma links, with all of its optional sub-parts
+  Requirement 10.2.1.1 Greek text within square brackets
+  Requirement 10.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
+  Requirement 10.2.1.3 trailing "/01.md)"
+  Requirement 10.2.1.4 Required gloss prefaced by colon
+  Requirement 10.2.1.5 Optional textual narrative following gloss data
+  Requirement 10.2.1.6 Optional Sense link following gloss data
+  Requirement 10.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
+  Requirement 10.3 Each instance must be separate by a comma
+  Requirement 10.4 A period should terminate this marker data.
 
 11. * LXX/Hebrew glosses: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 This marker's data should contain any associated data that was propagated from the A-S lexicon. That propagation may have placed this data under other markers in this file, and if so, it should be moved back to this marker's data. There may be no LXX/Hebrew gloss data for a given lemma file. Remove or expand any abbreviations that may remain and check the format for all scripture references against `Scripture Links`_. The LXX book references from Abbott-Smith were generally in the format **<LXX book>.<chapter>.<verse>**. These should be reformatted to reflect the documented reference format for the `USFM Names <https://ugl-info.readthedocs.io/en/latest/abbreviations.html#usfm-names>`_ portion of these UGL documents. An LXX/Hebrew gloss contains, at a minimum, a Scripture link and/or a Hebrew lemma link. A space should be used to separate these two if both are present for a single LXX/Hebrew gloss instance. Each instance must be separated from other instances by a comma, even if one instance has only a Hebrew lemma link, one instance has only a Scripture link, or one instance has both links. Each of these comma-separated instances may have leading textual narrative/discussion which must be preceded by a semicolon (;). No special punctutation is needed to transition from this narrative text to one or both of the links for this instance.  Where present this data should be terminated with a period. Examples of the different forms of this data are:
+
 ..
-Requirement 11.1 Marker required 
-Requirement 11.2 If data entered it must be in the form of one or more Scripture Links 
-Requirement 11.2.2.1 Standard book name must follow table definitions and be followed by a space, if present
-Requirement 11.2.2.2 Standard chapter number must be followed by a colon, if present
-Requirement 11.2.2.3 Standard verse number (always required)
-Requirement 11.2.2.4 USFM BCV follow table and normal format (always required)
-Requirement 11.2.2.5 For books with only one chapter Standard chapter number and colon must be omitted
-Requirement 11.2.2.6 Standard book may be omitted for consecutive references to same book, with one or more chapters
-Requirement 11.2.2.7 Standard book, chapter, and its colon, may be omitted for consecutive references to same book and chapter
-Requirement 11.2.2.8 Psalms Standard to USFM chapter comparison per LXX to Canonical Mapping
-Requirement 11.2.2.9 Psalms Standard to USFM verse comparion decision per LXX to Canonical Mapping
-Requirement 11.3 and/or one or more Hebrew Lemma links
-Requirement 11.3.3.1 Hebrew text (single word only) enclosed in square brackets
-Requirement 11.3.3.2 leading "(//en-uhal/"
-Requirement 11.3.3.3 Strong's ID, lead H with only 4 digits, followed by ")"
-Requirement 11.3.3.4 An optional gloss may follow the close parenthesis, preceded by a colon
-Requirement 11.3.3.5 Optional textual narrative may follow this gloss or the closing parenthesis if no gloss
-Requirement 11.3.3.6 Optional Sense link data may follow this gloss or the closing parenthesis if no gloss
-Requirement 11.3.3.7 A semicolon must precede either the narrative or sense link which can be in any order with no separation character between them
-Requirement 11.4 If both a scripture link and an Hebrew lemma link are entered they mus be separated by a space
-Requirement 11.5 Multiple instances of gloases must be separated bya comma
-Requirement 11.6 Textual narrative can be provided by entering that data after a gloss, preceded by a semicolon
-Requirement 11.7 If present, this marker data must be terminated with a period. 
+  Requirement 11.1 Marker required 
+  Requirement 11.2 If data entered it must be in the form of one or more Scripture Links 
+  Requirement 11.2.2.1 Standard book name must follow table definitions and be followed by a space, if present
+  Requirement 11.2.2.2 Standard chapter number must be followed by a colon, if present
+  Requirement 11.2.2.3 Standard verse number (always required)
+  Requirement 11.2.2.4 USFM BCV follow table and normal format (always required)
+  Requirement 11.2.2.5 For books with only one chapter Standard chapter number and colon must be omitted
+  Requirement 11.2.2.6 Standard book may be omitted for consecutive references to same book, with one or more chapters
+  Requirement 11.2.2.7 Standard book, chapter, and its colon, may be omitted for consecutive references to same book and chapter
+  Requirement 11.2.2.8 Psalms Standard to USFM chapter comparison per LXX to Canonical Mapping
+  Requirement 11.2.2.9 Psalms Standard to USFM verse comparion decision per LXX to Canonical Mapping
+  Requirement 11.3 and/or one or more Hebrew Lemma links
+  Requirement 11.3.3.1 Hebrew text (single word only) enclosed in square brackets
+  Requirement 11.3.3.2 leading "(//en-uhal/"
+  Requirement 11.3.3.3 Strong's ID, lead H with only 4 digits, followed by ")"
+  Requirement 11.3.3.4 An optional gloss may follow the close parenthesis, preceded by a colon
+  Requirement 11.3.3.5 Optional textual narrative may follow this gloss or the closing parenthesis if no gloss
+  Requirement 11.3.3.6 Optional Sense link data may follow this gloss or the closing parenthesis if no gloss
+  Requirement 11.3.3.7 A semicolon must precede either the narrative or sense link which can be in any order with no separation character between them
+  Requirement 11.4 If both a scripture link and an Hebrew lemma link are entered they mus be separated by a space
+  Requirement 11.5 Multiple instances of gloases must be separated bya comma
+  Requirement 11.6 Textual narrative can be provided by entering that data after a gloss, preceded by a semicolon
+  Requirement 11.7 If present, this marker data must be terminated with a period. 
 
 ::
 
@@ -359,91 +369,98 @@ Requirement 11.7 If present, this marker data must be terminated with a period.
 12. * Time Period/Ancient Authors: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This marker should have no data supplied for this stage of the project.
+
 ..
-Requirement 12.1 Marker required 
-Requirement 12.2 No data is allowed for this Stage 2 of the project.
+  Requirement 12.1 Marker required 
+  Requirement 12.2 No data is allowed for this Stage 2 of the project.
 
 13. * Related words: 
 ^^^^^^^^^^^^^^^^^^^^
 This marker's data should contain any other Greek lemmas that are identified by the other lexica, as being related to this lemma, but which are not etymologically related and do not qualify as being a synonym or antonym. These should be formatted per `Greek Lemma Link`_, above. Project time and schedule does not give us the freedom to perform our own research on this topic so we must rely solely upon the other lexica. Any Greek lemma reference identified by other lexica that is not a UGL-defined lemma should be omitted from this lexicon. To determine if a lemma is a UGL-defined lemma you will need to open up the associated Greek letter’s Word Sort TOC file, as discussed in `<http://ugl-info.readthedocs.io/en/latest/assignments.html#To more easily access these individual lemma files>`_ . The lemma must appear in that TOC file to be a UGL-defined lemma and if so, you can see the Strongs-Plus ID for it. Multiple links should be separated by a comma. A period should terminate this data when present.
+
 ..
-Requirement 13.1 Marker required 
-Requirement 13.2 All data entered must be in the form of Greek Lemma links
-Requirement 13.2.1.1 Greek text within square brackets
-Requirement 13.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
-Requirement 13.2.1.3 trailing "/01.md)"
-Requirement 13.2.1.4 Required gloss prefaced by colon
-Requirement 13.2.1.5 Optional textual narrative following gloss data
-Requirement 13.2.1.6 Optional Sense link following gloss data
-Requirement 13.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
-Requirement 13.3 Each instance must be separated by a comma 
-Requirement 13.4 If entered this data must be terminated in a period
+  Requirement 13.1 Marker required 
+  Requirement 13.2 All data entered must be in the form of Greek Lemma links
+  Requirement 13.2.1.1 Greek text within square brackets
+  Requirement 13.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
+  Requirement 13.2.1.3 trailing "/01.md)"
+  Requirement 13.2.1.4 Required gloss prefaced by colon
+  Requirement 13.2.1.5 Optional textual narrative following gloss data
+  Requirement 13.2.1.6 Optional Sense link following gloss data
+  Requirement 13.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
+  Requirement 13.3 Each instance must be separated by a comma 
+  Requirement 13.4 If entered this data must be terminated in a period
 
 14. * Antonyms for all senses: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This marker's data should contain any other Greek lemmas that are identified by the other lexica as antonyms. These should be formatted per `Greek Lemma Link`_, above. Project time and schedule does not give us the freedom to perform our own research on this topic so we must rely solely upon the other lexica. Any Greek lemma reference identified by other lexica that is not a UGL-defined lemma should be omitted from this lexicon. To determine if a lemma is a UGL-defined lemma you will need to open up the associated Greek letter’s Word Sort TOC file, as discussed in `<http://ugl-info.readthedocs.io/en/latest/assignments.html#To more easily access these individual lemma files>`_ . The lemma must appear in that TOC file to be a UGL-defined lemma and if so, you can see the Strongs-Plus ID for it. Multiple links should be separated by a comma. A period should terminate this data when present.
+
 ..
-Requirement 14.1 Marker required 
-Requirement 14.2 All data entered must be in the form of Greek Lemma links
-Requirement 14.2.1.1 Greek text within square brackets
-Requirement 14.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
-Requirement 14.2.1.3 trailing "/01.md)"
-Requirement 14.2.1.4 Required gloss prefaced by colon
-Requirement 14.2.1.5 Optional textual narrative following gloss data
-Requirement 14.2.1.6 Optional Sense link following gloss data
-Requirement 14.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
-Requirement 14.3 Each instance must be separated by a comma 
-Requirement 14.4 If entered this data must be terminated in a period
+  Requirement 14.1 Marker required 
+  Requirement 14.2 All data entered must be in the form of Greek Lemma links
+  Requirement 14.2.1.1 Greek text within square brackets
+  Requirement 14.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
+  Requirement 14.2.1.3 trailing "/01.md)"
+  Requirement 14.2.1.4 Required gloss prefaced by colon
+  Requirement 14.2.1.5 Optional textual narrative following gloss data
+  Requirement 14.2.1.6 Optional Sense link following gloss data
+  Requirement 14.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
+  Requirement 14.3 Each instance must be separated by a comma 
+  Requirement 14.4 If entered this data must be terminated in a period
 
 15. * Synonyms for all senses: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 This marker's data should contain any other Greek lemmas that are identified by the other lexica as synonyms. These should be formatted per `Greek Lemma Link`_, above. Project time and schedule does not give us the freedom to perform our own research on this topic so we must rely solely upon the other lexica. Any Greek lemma reference identified by other lexica that is not a UGL-defined lemma should be omitted from this lexicon. To determine if a lemma is a UGL-defined lemma you will need to open up the associated Greek letter’s Word Sort TOC file, as discussed in `To more easily access these individual lemma files <http://ugl-info.readthedocs.io/en/latest/assignments.html#To more easily access these individual lemma files>`_ . The lemma must appear in that TOC file to be a UGL-defined lemma and if so, you can see the Strongs-Plus ID for it. Multiple links should be separated by a comma. A period should terminate this data when present.
+
 ..
-Requirement 15.1 Marker required 
-Requirement 15.2 All data entered must be in the form of Greek Lemma links
-Requirement 15.2.1.1 Greek text within square brackets
-Requirement 15.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
-Requirement 15.2.1.3 trailing "/01.md)"
-Requirement 15.2.1.4 Required gloss prefaced by colon
-Requirement 15.2.1.5 Optional textual narrative following gloss data
-Requirement 15.2.1.6 Optional Sense link following gloss data
-Requirement 15.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
-Requirement 15.3 Each instance must be separated by a comma 
-Requirement 15.4 If entered this data must be terminated in a period
+  Requirement 15.1 Marker required 
+  Requirement 15.2 All data entered must be in the form of Greek Lemma links
+  Requirement 15.2.1.1 Greek text within square brackets
+  Requirement 15.2.1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
+  Requirement 15.2.1.3 trailing "/01.md)"
+  Requirement 15.2.1.4 Required gloss prefaced by colon
+  Requirement 15.2.1.5 Optional textual narrative following gloss data
+  Requirement 15.2.1.6 Optional Sense link following gloss data
+  Requirement 15.2.1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
+  Requirement 15.3 Each instance must be separated by a comma 
+  Requirement 15.4 If entered this data must be terminated in a period
 
 16. ## Senses: 
 ^^^^^^^^^^^^^^
 The only permitted data for this marker is one or more Sense markers with their associated sub-markers. Editors should start with the structure and content embedded in the files from the Abbott-Smith lexicon. After review and analysis of the sense data from the other lexica this Abbott-Smith starting point can be expanded with additional sense and sub-sense markers, can be down-sized with the removal of sense and sub-sense markers, and/or merely modified to update the Definitions and/or Glosses with the same number of sense and sub-sense markers. 
+
 ..
-Requirement 16.1 Marker required 
-Requirement 16.2 No marker data is allowed, only sub-markers
+  Requirement 16.1 Marker required 
+  Requirement 16.2 No marker data is allowed, only sub-markers
 
 17. ### Sense <sense number>:  
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The only permitted data for this marker is the in-line Sense number with a colon as the line terminator and the four sense sub-markers with their associated data. The sense number starts at 1.0 and increments at the decimal digit, the number preceding the decimal point, for each significant sense and increments at the fractional level to differentiate sub-senses of each significant sense. The sense number, and thus the senses, can vary from a single sense with the number 1.0, to complex sub-senses which could be in the form, 3.8.5, which would be the third significant sense, it’s eighth sub-sense, and that sub-sense’s fifth sub-sub-sense. It is recommended that you limit your sense levels to only two decimal digits as, 2.4, but three levels is the maximum, if required for completeness and accuracy. These sense numbers must occur in numerical order in the file, with no missing intermediate numbers; ### Sense 2.4 followed by ### Sense 2.6 would be flagged as a syntax error, since ###Sense 2.5 is missing. Every ### Sense marker is followed only by sub-markers, with no data specified for this marker. Each of the following sub-markers must be present and in the prescribed order given below.
+
 ..
-Requirement 17.1 Marker required 
-Requirement 17.2 This sub-marker text must be followed by a 1 or 2 decimal point fractional number, followed by a colon 
-Requirement 17.3 No data is allowed following this sub-marker, except its associated sub-sub-markers
-Requirement 17.4 The sub-sense value must start at 1.0
-Requirement 17.5 Sub-sense values must in numerical order
-Requirement 17.6 No missing intermediate sub-sense values are allowed
+  Requirement 17.1 Marker required 
+  Requirement 17.2 This sub-marker text must be followed by a 1 or 2 decimal point fractional number, followed by a colon 
+  Requirement 17.3 No data is allowed following this sub-marker, except its associated sub-sub-markers
+  Requirement 17.4 The sub-sense value must start at 1.0
+  Requirement 17.5 Sub-sense values must in numerical order
+  Requirement 17.6 No missing intermediate sub-sense values are allowed
 
 .. note:: Many lexica use a sense numbering system that includes letters and possibly Greek letters, e.g. 1bα. This lexicon will use only numbers for each of the level of senses appropriate for the lemma, with a decimal point separating the sense from the sub-sense and then the sub-sub-sense numbers.
 
 18. #### Definition: 
 ^^^^^^^^^^^^^^^^^^^^
 This marker's data should contain the top-level definition for this Sense. It can be expressed as a full sentence or as a clause with multiple instances separated by a comma. Narrative text and/or `Sense Link`_ can be provided and must follow its associated definition data instance with a semicolon.  No termination mark should be entered. Some examples of this clausal form are:
+
 ..
-Requirement 18.1 Marker required 
-Requirement 18.2 Textual data is entered for this
-Requirement 18.3 Multiple instances must be separated by a comma
-Requirement 18.4 Narrative text may follow this
-Requirement 18.5 And/or Sense Link data may follow
-Requirement 18.5.4.1 The visual representation of the sense link must be enclosed within square brackets. It must reflect the referenced Sense or sub-Sense as entered in the file
-Requirement 18.5.4.2 Within parenthesis is the link representation which is "#sense-" followed by that Sense level with all periods removed
-Requirement 18.6 The first of these two preceded by a semicolon
-Requirement 18.7 No termination mark is allowed for this data
+  Requirement 18.1 Marker required 
+  Requirement 18.2 Textual data is entered for this
+  Requirement 18.3 Multiple instances must be separated by a comma
+  Requirement 18.4 Narrative text may follow this
+  Requirement 18.5 And/or Sense Link data may follow
+  Requirement 18.5.4.1 The visual representation of the sense link must be enclosed within square brackets. It must reflect the referenced Sense or sub-Sense as entered in the file
+  Requirement 18.5.4.2 Within parenthesis is the link representation which is "#sense-" followed by that Sense level with all periods removed
+  Requirement 18.6 The first of these two preceded by a semicolon
+  Requirement 18.7 No termination mark is allowed for this data
 
 ::
 
@@ -454,48 +471,51 @@ Requirement 18.7 No termination mark is allowed for this data
 19. #### Glosses: 
 ^^^^^^^^^^^^^^^^^
 This marker's data should contain one or more one-word meanings for this sense. Multiple instances should be separated by a comma. Any narrative text and/or `Sense Link`_ should follow its associated gloss data instance with a semicolon.  No termination mark should be entered.
+
 ..
-Requirement 19.1 Marker required 
-Requirement 19.2 Textual data is entered for this
-Requirement 19.3 Multiple instances must be separated by a comma
-Requirement 19.4 Narrative text may follow this
-Requirement 19.5 And/or Sense Link data may follow
-Requirement 19.5.4.1 The visual representation of the sense link must be enclosed within square brackets. It must reflect the referenced Sense or sub-Sense as entered in the file
-Requirement 19.5.4.2 Within parenthesis is the link representation which is "#sense-" followed by that Sense level with all periods removed
-Requirement 19.6 The first of these two preceded by a semicolon
-Requirement 19.7 No termination mark is allowed for this data
+  Requirement 19.1 Marker required 
+  Requirement 19.2 Textual data is entered for this
+  Requirement 19.3 Multiple instances must be separated by a comma
+  Requirement 19.4 Narrative text may follow this
+  Requirement 19.5 And/or Sense Link data may follow
+  Requirement 19.5.4.1 The visual representation of the sense link must be enclosed within square brackets. It must reflect the referenced Sense or sub-Sense as entered in the file
+  Requirement 19.5.4.2 Within parenthesis is the link representation which is "#sense-" followed by that Sense level with all periods removed
+  Requirement 19.6 The first of these two preceded by a semicolon
+  Requirement 19.7 No termination mark is allowed for this data
 
 
 20. #### Explanation: 
 ^^^^^^^^^^^^^^^^^^^^^
 This marker's data should be left empty for this Stage of the project, unless there is discussion needed to explain the *context* of the Definition and/or Glosses. Multiple instances should be separated by a comma. No termination mark should be entered.
+
 ..
-Requirement 20.1 Marker required 
-Requirement 20.2 Textual data is entered for this
-Requirement 20.3 Multiple instances must be separated by a comma
-Requirement 20.4  No termination mark is allowed for this data
+  Requirement 20.1 Marker required 
+  Requirement 20.2 Textual data is entered for this
+  Requirement 20.3 Multiple instances must be separated by a comma
+  Requirement 20.4  No termination mark is allowed for this data
 
 21. #### Citations: 
 ^^^^^^^^^^^^^^^^^^^
 This marker’s data should contain each Scripture reference associated with this sense of the lemma. For a sense with many references, you may choose a subset of those that you believe would be most beneficial for the users of this lexicon. Omitting some for the sake of brevity would be the reason to specify No for the `9. * All Scriptures cited: Yes/No`_ . Each citation instance must be made up of only one `Scripture Links`_, defined above. Optionally a citation instance can be preceded by a narrative discussion or by either or both of the actual UGNT Greek text and an English translation, the latter should be suffixed with the translation source identified as three to four capital letters enclosed in parenthesis: e.g. (ULT),(NASB),(ESV),or (NIV). If narrative discussion is entered this should be preceded with a tilde, “~” and terminsted by a colon, ":". This narrative discussion may include a single `Greek Lemma Link`_ or a single `Hebrew Lemma Links`_ but these must follow their documented syntax. An exception to this is that *this* Greek lemma link does not require a gloss or definition, but if it is present, it should be preceded by a comma, and not a colon as in the standard form. If a gloss or definition for a Hebrew lemma link is provided, it should be preceded by a comma, and not a colon as in its standard form. If any narrative discussion is entered it should precede its assocaited UGNT text or English translation. A semicolon must precede the UGNT text as well as the English translation, if entered. It should be noted that if the UGNT text is entered it would be most beneficial for the downstream translators to have this Greek entered in Greek lemma link format to support hotlinks to the lemmas for each of those Greek words. For this case of entering Greek lemma links, no gloss/definition data should follow each link. Also, where the current Greek lemma occurs within that UGNT text, that Greek word should not be in Greek lemma link format since that hotlink would send the translator back to the current lemma file. It should be entered as simple Greek text. If any or all of these three preceding data pieces are entered they should be separated from their Scripture link with a colon. It should be noted that any narrative discussion is terminated by either a semicolon if there is inserted UGNT and/or English translation or by a colon if neither of these is inserted. To not overburden the translators and not have a congested file, the UGNT text and English translation should be entered for only the first citation link instance. Multiple citation instances must be separated by a comma. No termination mark should be entered for this data except for the citation data of the last Sense level in the lemma file. For this last citation data in the file, it should be terminated with a period. As discussed in `8. * Instances in the New Testament: <count>`_, above, annotations to this citation data should be made to identify which references have more than 1 instance of this lemma. This identification must be enclosed within curly brackets “{}”. It may be just standard textual narrative or it may include one or more Sense links. As with other marker data, this data can span multiple, consecutive, lines in the file with no blank lines between them. Examples of the format for this annotation are:
+
 ..
-Requirement 21.1 Marker required 
-Requirement 21.2 This data shold contain Scripture Links
-Requirement 21.3 It may be preceded by a narrative discussion which is preceded by a tilde (~)
-Requirement 21.4 The narrative text may include Greek Lemma links
-Requirement 21.5 The gloss for this Greek lemma link is not required, but if present should be preceded by a comma, not a colon as in the standard form
-Requirement 21.6 The narrative text may include Hebrew Lemma links
-Requirement 21.7 And/or the actual UGNT text which is preceded by a semicolon
-Requirement 21.8 The UGNT text may be standard Greek form or it may be in Greek Lemma link format, though with no gloss allowed
-Requirement 21.9 And/or an English translation which is preceded by a semicolon
-Requirement 21.10 Any preceding data to its Scripture Link must be followed by a colon
-Requirement 21.11 All English translations must be followed by a 3 or 4 letter abbreviation of the translation source, enclosed in parenthesis
-Requirement 21.12 
-Requirement 21.13 
-Requirement 21.14 
-Requirement 21.15 
-Requirement 21.16 
-Requirement 21.17 
+  Requirement 21.1 Marker required 
+  Requirement 21.2 This data shold contain Scripture Links
+  Requirement 21.3 It may be preceded by a narrative discussion which is preceded by a tilde (~)
+  Requirement 21.4 The narrative text may include Greek Lemma links
+  Requirement 21.5 The gloss for this Greek lemma link is not required, but if present should be preceded by a comma, not a colon as in the standard form
+  Requirement 21.6 The narrative text may include Hebrew Lemma links
+  Requirement 21.7 And/or the actual UGNT text which is preceded by a semicolon
+  Requirement 21.8 The UGNT text may be standard Greek form or it may be in Greek Lemma link format, though with no gloss allowed
+  Requirement 21.9 And/or an English translation which is preceded by a semicolon
+  Requirement 21.10 Any preceding data to its Scripture Link must be followed by a colon
+  Requirement 21.11 All English translations must be followed by a 3 or 4 letter abbreviation of the translation source, enclosed in parenthesis
+  Requirement 21.12 
+  Requirement 21.13 
+  Requirement 21.14 
+  Requirement 21.15 
+  Requirement 21.16 
+  Requirement 21.17 
 
 ::
 
