@@ -4,6 +4,7 @@ Markdown
 ========
 
 The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the **visual output** for the project. When you select a lemma file on the DCS web you will see this visual form, though the final, published, visual form may be slightly different. When editing a file, you will be working in the Markdown language environment. This document will endeavor to specify the required Markdown format and content of each lemma file to achieve the project-desired output, consistently across all lemmas for all editors. Markdown is blank line sensitive which means that data within a marker can be entered on multiple consecutive lines and will be merged together from a syntax checking and the visual output perspective. A blank line must be entered between data lines to have that data treated as separate from a syntax checking and the visual output perspective. Markdown also provides a way to add emphasis to data that is entered. Text that is enclosed within a single “*” or a single “_” will be italicized. Text that is enclosed within double “*” or double “_” will be displayed bold. These can be combined to achieve both forms of emphasis. The following example will be displayed as below:
+
 ..
 Comments below were added by Dave Statezni in an attempt to formally document each of the syntax requirements
 for the syntax checker, itself, but also for the lemma files. This will allow the creation of a set of 
@@ -451,21 +452,46 @@ Requirement 18.7 No termination mark is allowed for this data
 This marker's data should contain one or more one-word meanings for this sense. Multiple instances should be separated by a comma. Any narrative text and/or `Sense Link`_ should follow its associated gloss data instance with a semicolon.  No termination mark should be entered.
 ..
 Requirement 19.1 Marker required 
-Requirement 19
+Requirement 19.2 Textual data is entered for this
+Requirement 19.3 Multiple instances must be separated by a comma
+Requirement 19.4 Narrative text may follow this
+Requirement 19.5 And/or Sense Link data may follow
+Requirement 19.5.4.1 The visual representation of the sense link must be enclosed within square brackets. It must reflect the referenced Sense or sub-Sense as entered in the file
+Requirement 19.5.4.2 Within parenthesis is the link representation which is "#sense-" followed by that Sense level with all periods removed
+Requirement 19.6 The first of these two preceded by a semicolon
+Requirement 19.7 No termination mark is allowed for this data
+
 
 20. #### Explanation: 
 ^^^^^^^^^^^^^^^^^^^^^
 This marker's data should be left empty for this Stage of the project, unless there is discussion needed to explain the *context* of the Definition and/or Glosses. Multiple instances should be separated by a comma. No termination mark should be entered.
 ..
 Requirement 20.1 Marker required 
-Requirement 20
+Requirement 20.2 Textual data is entered for this
+Requirement 20.3 Multiple instances must be separated by a comma
+Requirement 20.4  No termination mark is allowed for this data
 
 21. #### Citations: 
 ^^^^^^^^^^^^^^^^^^^
 This marker’s data should contain each Scripture reference associated with this sense of the lemma. For a sense with many references, you may choose a subset of those that you believe would be most beneficial for the users of this lexicon. Omitting some for the sake of brevity would be the reason to specify No for the `9. * All Scriptures cited: Yes/No`_ . Each citation instance must be made up of only one `Scripture Links`_, defined above. Optionally a citation instance can be preceded by a narrative discussion or by either or both of the actual UGNT Greek text and an English translation, the latter should be suffixed with the translation source identified as three to four capital letters enclosed in parenthesis: e.g. (ULT),(NASB),(ESV),or (NIV). If narrative discussion is entered this should be preceded with a tilde, “~” and terminsted by a colon, ":". This narrative discussion may include a single `Greek Lemma Link`_ or a single `Hebrew Lemma Links`_ but these must follow their documented syntax. An exception to this is that *this* Greek lemma link does not require a gloss or definition, but if it is present, it should be preceded by a comma, and not a colon as in the standard form. If a gloss or definition for a Hebrew lemma link is provided, it should be preceded by a comma, and not a colon as in its standard form. If any narrative discussion is entered it should precede its assocaited UGNT text or English translation. A semicolon must precede the UGNT text as well as the English translation, if entered. It should be noted that if the UGNT text is entered it would be most beneficial for the downstream translators to have this Greek entered in Greek lemma link format to support hotlinks to the lemmas for each of those Greek words. For this case of entering Greek lemma links, no gloss/definition data should follow each link. Also, where the current Greek lemma occurs within that UGNT text, that Greek word should not be in Greek lemma link format since that hotlink would send the translator back to the current lemma file. It should be entered as simple Greek text. If any or all of these three preceding data pieces are entered they should be separated from their Scripture link with a colon. It should be noted that any narrative discussion is terminated by either a semicolon if there is inserted UGNT and/or English translation or by a colon if neither of these is inserted. To not overburden the translators and not have a congested file, the UGNT text and English translation should be entered for only the first citation link instance. Multiple citation instances must be separated by a comma. No termination mark should be entered for this data except for the citation data of the last Sense level in the lemma file. For this last citation data in the file, it should be terminated with a period. As discussed in `8. * Instances in the New Testament: <count>`_, above, annotations to this citation data should be made to identify which references have more than 1 instance of this lemma. This identification must be enclosed within curly brackets “{}”. It may be just standard textual narrative or it may include one or more Sense links. As with other marker data, this data can span multiple, consecutive, lines in the file with no blank lines between them. Examples of the format for this annotation are:
 ..
 Requirement 21.1 Marker required 
-Requirement 21
+Requirement 21.2 This data shold contain Scripture Links
+Requirement 21.3 It may be preceded by a narrative discussion which is preceded by a tilde (~)
+Requirement 21.4 The narrative text may include Greek Lemma links
+Requirement 21.5 The gloss for this Greek lemma link is not required, but if present should be preceded by a comma, not a colon as in the standard form
+Requirement 21.6 The narrative text may include Hebrew Lemma links
+Requirement 21.7 And/or the actual UGNT text which is preceded by a semicolon
+Requirement 21.8 The UGNT text may be standard Greek form or it may be in Greek Lemma link format, though with no gloss allowed
+Requirement 21.9 And/or an English translation which is preceded by a semicolon
+Requirement 21.10 Any preceding data to its Scripture Link must be followed by a colon
+Requirement 21.11 All English translations must be followed by a 3 or 4 letter abbreviation of the translation source, enclosed in parenthesis
+Requirement 21.12 
+Requirement 21.13 
+Requirement 21.14 
+Requirement 21.15 
+Requirement 21.16 
+Requirement 21.17 
 
 ::
 
