@@ -3,6 +3,7 @@
 Markdown
 ========
 
+The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the **visual output** for the project. When you select a lemma file on the DCS web you will see this visual form, though the final, published, visual form may be slightly different. When editing a file, you will be working in the Markdown language environment. This document will endeavor to specify the required Markdown format and content of each lemma file to achieve the project-desired output, consistently across all lemmas for all editors. Markdown is blank line sensitive which means that data within a marker can be entered on multiple consecutive lines and will be merged together from a syntax checking and the visual output perspective. A blank line must be entered between data lines to have that data treated as separate from a syntax checking and the visual output perspective. Markdown also provides a way to add emphasis to data that is entered. Text that is enclosed within a single “*” or a single “_” will be italicized. Text that is enclosed within double “*” or double “_” will be displayed bold. These can be combined to achieve both forms of emphasis. The following example will be displayed as below:
 ..
 Comments below were added by Dave Statezni in an attempt to formally document each of the syntax requirements
 for the syntax checker, itself, but also for the lemma files. This will allow the creation of a set of 
@@ -11,7 +12,6 @@ of positive tests which endeavor to exercise each of these requirements correctl
 indicate a syntax error for correct syntax. Another set of tests will be developed which contain violations
 of each of these requirements to ensure that the checker still flags them as errors.
 
-The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the **visual output** for the project. When you select a lemma file on the DCS web you will see this visual form, though the final, published, visual form may be slightly different. When editing a file, you will be working in the Markdown language environment. This document will endeavor to specify the required Markdown format and content of each lemma file to achieve the project-desired output, consistently across all lemmas for all editors. Markdown is blank line sensitive which means that data within a marker can be entered on multiple consecutive lines and will be merged together from a syntax checking and the visual output perspective. A blank line must be entered between data lines to have that data treated as separate from a syntax checking and the visual output perspective. Markdown also provides a way to add emphasis to data that is entered. Text that is enclosed within a single “*” or a single “_” will be italicized. Text that is enclosed within double “*” or double “_” will be displayed bold. These can be combined to achieve both forms of emphasis. The following example will be displayed as below:
 ::
 
   This **bold data**
