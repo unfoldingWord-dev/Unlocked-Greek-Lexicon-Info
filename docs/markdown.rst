@@ -2,6 +2,7 @@
 
 Markdown
 ========
+
 ..
 Comments below were added by Dave Statezni in an attempt to formally document each of the syntax requirements
 for the syntax checker, itself, but also for the lemma files. This will allow the creation of a set of 
