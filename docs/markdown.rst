@@ -6,12 +6,12 @@ Markdown
 The lemma files for en_ugl are defined in Markdown format. This format/language is a convenient means to specify the desired format of the **visual output** for the project. When you select a lemma file on the DCS web you will see this visual form, though the final, published, visual form may be slightly different. When editing a file, you will be working in the Markdown language environment. This document will endeavor to specify the required Markdown format and content of each lemma file to achieve the project-desired output, consistently across all lemmas for all editors. Markdown is blank line sensitive which means that data within a marker can be entered on multiple consecutive lines and will be merged together from a syntax checking and the visual output perspective. A blank line must be entered between data lines to have that data treated as separate from a syntax checking and the visual output perspective. Markdown also provides a way to add emphasis to data that is entered. Text that is enclosed within a single “*” or a single “_” will be italicized. Text that is enclosed within double “*” or double “_” will be displayed bold. These can be combined to achieve both forms of emphasis. The following example will be displayed as below:
 
 ..
-Comments below were added by Dave Statezni in an attempt to formally document each of the syntax requirements
-for the syntax checker, itself, but also for the lemma files. This will allow the creation of a set of 
-regression tests that can be run against the checker whenever it is modified. There will be one (or one set)
-of positive tests which endeavor to exercise each of these requirements correctly to ensure that the checker does not
-indicate a syntax error for correct syntax. Another set of tests will be developed which contain violations
-of each of these requirements to ensure that the checker still flags them as errors.
+  Comments below were added by Dave Statezni in an attempt to formally document each of the syntax requirements
+  for the syntax checker, itself, but also for the lemma files. This will allow the creation of a set of 
+  regression tests that can be run against the checker whenever it is modified. There will be one (or one set)
+  of positive tests which endeavor to exercise each of these requirements correctly to ensure that the checker does not
+  indicate a syntax error for correct syntax. Another set of tests will be developed which contain violations
+  of each of these requirements to ensure that the checker still flags them as errors.
 
 ::
 
@@ -44,14 +44,15 @@ References
 Greek Lemma Link
 ^^^^^^^^^^^^^^^^
 There is a required format needed to specify a reference to a different Greek lemma within the body of this file. When to add these will be discussed under the appropriate marker discussions, below. The basic link format is in the form: [<Greek form of another lemma>](../<Strongs-Plus Identifier of that lemma>/01.md). Each instance of a link is made up of different pieces of associated data. Each link is required to have its associated referenced lemma’s “Definition” or “Gloss” from that lemma's UGL data which best fits the current context. This data piece must follow the corresponding specification of the link with a colon.  Optional textual narrative and/or `Sense Link`_ data pieces should follow this definition/gloss data with a semicolon. This narrative text and Sense Link can appear in any order after that semicolon, with no separator required between the narrative and Sense Link.  A comma should be used to separate each instance of a Greek Lemma Link.
+
 ..
-Requirement .1.1 Greek text within square brackets
-Requirement .1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
-Requirement .1.3 trailing "/01.md)"
-Requirement .1.4 Required gloss prefaced by colon
-Requirement .1.5 Optional textual narrative following gloss data
-Requirement .1.6 Optional Sense link following gloss data
-Requirement .1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
+  Requirement .1.1 Greek text within square brackets
+  Requirement .1.2 leading "(../", Gnnnnn, 5-digit Strong's Plus ID
+  Requirement .1.3 trailing "/01.md)"
+  Requirement .1.4 Required gloss prefaced by colon
+  Requirement .1.5 Optional textual narrative following gloss data
+  Requirement .1.6 Optional Sense link following gloss data
+  Requirement .1.7 Optional narrative and/or Sense link must be preceded by semicolon and in any order
 
 The different formats for this are:
 ::
@@ -133,14 +134,15 @@ Hebrew Lemma Links
 ^^^^^^^^^^^^^^^^^^
 
 There is also a fixed format for a reference to a Hebrew Lemma file. When to add these will be discussed under the appropriate marker discussions, below. The basic link format is in the form: [<Hebrew lemma]( //en-uhal/<Hebrew Strongs ID for that lemma>). This Hebrew lemma must be a single Hebrew word, not a combination of more than one word. Additional data may be added for each of the Hebrew lemma links. A single definition or gloss for the lemma will follow that link and be preceded by a colon. This is optional and not a requirement for these Hebrew lemma links, as it is for the Greek lemma links. Following this definition/gloss may be narrative text and/or a sense link. These should be preceded with a semicolon. This narrative text and Sense Link can appear in any order after that semicolon, with no separator required between the narrative and Sense Link. A comma should be used to separate each instance of a Hebrew Lemma Link.
+
 ..
-Requirement .3.1 Hebrew text (single word only) enclosed in square brackets
-Requirement .3.2 leading "(//en-uhal/"
-Requirement .3.3 Strong's ID, lead H with only 4 digits, followed by ")"
-Requirement .3.4 An optional gloss may follow the close parenthesis, preceded by a colon
-Requirement .3.5 Optional textual narrative may follow this gloss or the closing parenthesis if no gloss
-Requirement .3.6 Optional Sense link data may follow this gloss or the closing parenthesis if no gloss
-Requirement .3.7 A semicolon must precede either the narrative or sense link which can be in any order with no separation character between them
+  Requirement .3.1 Hebrew text (single word only) enclosed in square brackets
+  Requirement .3.2 leading "(//en-uhal/"
+  Requirement .3.3 Strong's ID, lead H with only 4 digits, followed by ")"
+  Requirement .3.4 An optional gloss may follow the close parenthesis, preceded by a colon
+  Requirement .3.5 Optional textual narrative may follow this gloss or the closing parenthesis if no gloss
+  Requirement .3.6 Optional Sense link data may follow this gloss or the closing parenthesis if no gloss
+  Requirement .3.7 A semicolon must precede either the narrative or sense link which can be in any order with no separation character between them
 
 The formats for the different options are as follows (using a 4-digit Strong’s number):
 ::
@@ -181,9 +183,10 @@ Sense Link
 ^^^^^^^^^^
 
 A link reference to a specific Sense definition for the current Lemma can be made whereever textual narrative is allowed. This was discussed above and will be alluded to in the discussion of content for the different UGL markers, below. These have a fixed format as shown below:
+
 ..
-Requirement .4.1 The visual representation of the sense link must be enclosed within square brackets. It must reflect the referenced Sense or sub-Sense as entered in the file
-Requirement .4.2 Within parenthesis is the link representation which is "#sense-" followed by that Sense level with all periods removed
+  Requirement .4.1 The visual representation of the sense link must be enclosed within square brackets. It must reflect the referenced Sense or sub-Sense as entered in the file
+  Requirement .4.2 Within parenthesis is the link representation which is "#sense-" followed by that Sense level with all periods removed
 
 ::
 
@@ -201,10 +204,11 @@ The UGL markers will be identified below. They should remain as entered and they
 1. # <Greek lemma>
 ^^^^^^^^^^^^^^^^^^
 The first line of each lemma file is a marker identifying its lemma. The initial format which came from the originating Abbott Smith lexicon uses a dash before the second term. For consistency and alignment with newer lexica, change these to replace the **<space>–** with **,<space>**. This line should be terminated with a period. e.g.
+
 ..
-Requirement 1.1 Each follow-on Greek term to the main should be preceded by a ",<space>". No hyphens allowed
-Requirement 1.2 This marker line should be terminated by a period
-Requirement 1.3 Must be followed by a blank line 
+  Requirement 1.1 Each follow-on Greek term to the main should be preceded by a ",<space>". No hyphens allowed
+  Requirement 1.2 This marker line should be terminated by a period
+  Requirement 1.3 Must be followed by a blank line 
 
 ::
 
