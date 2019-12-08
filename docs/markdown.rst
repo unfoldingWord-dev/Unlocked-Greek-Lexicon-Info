@@ -22,6 +22,9 @@ The lemma files for en_ugl are defined in Markdown format. This format/language 
 
 This **bold data** is entered *with italics* on multiple consecutive lines
 
+Syntax Checker
+--------------
+A Syntax Checker has been developed to read a lemma markdown file and determine whether it meets the requirements of this document. A change log for that Syntax Checker script, in the form of a Google Doc, can be found at `this link <https://docs.google.com/document/d/1wugi6DJIDEq2tu_eMro3uXWCPn2zNB0kLMnRtGh_VmI/edit?usp=sharing>`_
 
 Markers
 -------
