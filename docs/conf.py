@@ -239,6 +239,8 @@ html_static_path = ['_static']
 htmlhelp_basename = 'UnlockedGreekLexiconInfo'
 
 # -- Options for LaTeX output ---------------------------------------------
+# Use XeLaTex (to properly handle Unicode)
+latex_engine = 'xelatex'
 
 latex_elements = {
      # The paper size ('letterpaper' or 'a4paper').
